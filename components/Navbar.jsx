@@ -10,7 +10,7 @@ const Navbar = () => {
           <Link href="/">
             <Image
               className=""
-              src="iconImages/mainLogo.svg"
+              src="/mainLogo.svg"
               alt="pinterest logo"
               width={275}
               height={76}
@@ -26,13 +26,15 @@ const Navbar = () => {
           <p>Career</p>
         </div>
         <div className="cta">
-          <button className="relative w-[130px] h-[56px] bg-gradient-to-r from-[#45D400] to-[#005E00] text-black text-[16px] font-bold rounded-[40px] overflow-hidden group">
-            <span className="absolute inset-0 bg-gradient-to-r from-[#45D400] via-[#36BA00] to-[#005E00] transition-transform scale-0 group-hover:scale-100 group-hover:rotate-180 duration-500 ease-in-out rounded-[40px]"></span>
-            <span className="relative z-10 block text-center group-hover:text-white transition-transform duration-300 ease-in-out group-hover:scale-110">
-              Lorem
-            </span>
-            <span className="absolute -inset-1 bg-black opacity-0 group-hover:opacity-10 transition-opacity duration-300 rounded-[40px]"></span>
-          </button>
+          <Link href="/contact">
+            <button className="relative w-[130px] h-[56px] bg-gradient-to-r from-[#45D400] to-[#45D400] text-black text-[16px] rounded-[40px] overflow-hidden group">
+              <span className="absolute inset-0 bg-gradient-to-r from-[#45D400] via-[#36BA00] to-[#45D400] transition-transform scale-0 group-hover:scale-100 group-hover:rotate-180 duration-500 ease-in-out rounded-[40px]"></span>
+              <span className="relative z-10 block text-center group-hover:text-white transition-transform duration-300 ease-in-out group-hover:scale-110">
+              Write to Us
+              </span>
+              <span className="absolute -inset-1 bg-black opacity-0 group-hover:opacity-10 transition-opacity duration-300 rounded-[40px]"></span>
+            </button>
+          </Link>
         </div>
       </div>
     </div>

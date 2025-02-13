@@ -12,110 +12,244 @@ const page = () => {
             Privacy Policy
           </h2>
           <p className="text-[18px] leading-[21px] text-[#999999] mt-5">
-            Last updated: Jan 15, 2025
+            Last updated: Feb 12, 2025
           </p>
         </div>
       </div>
       <div className="text-[#1C1D58] px-16 py-20 max-container">
         <div className="">
-          <h6 className="text-[23px] leading-[27px] font-bold">Lorem Ipsum</h6>
-          <p className="text-[18px] leading-[21px] mt-3 ">
-            Lorem ipsum dolor sit amet consectetur. Bibendum id consectetur amet
-            nulla. Diam at morbi eget enim ultrices. Vitae ultricies ultrices
-            ipsum nunc non diam pretium vitae. Nulla aliquam interdum adipiscing
-            viverra sit imperdiet faucibus bibendum. Nullam quis diam.
+          <p className="text-[18px] leading-[21px] mt-0 ">
+            At BrandiT Communications, we understand that your privacy is
+            important. That's why we are committed to safeguarding the personal
+            information you share with us. By visiting our website and using our
+            services, you agree to the practices described in this policy. Let’s
+            break it down for you!
           </p>
         </div>
 
-        <div className="mt-20">
-          <h6 className="text-[23px] leading-[27px] font-bold">Lorem Ipsum</h6>
+        <div className="mt-14">
+          <h6 className="text-[23px] leading-[27px] font-bold">
+            What Information Do We Collect?
+          </h6>
+          <p className="text-[18px] leading-[21px] mt-3 ">
+            We gather certain information to enhance your experience with us.
+            This includes:
+          </p>
           <div className="">
             <p className="text-[18px] leading-[21px] mt-3 ">
-              <span className="mr-3">&#x2022;</span> Lorem ipsum dolor sit amet
-              consectetur. Bibendum id
+              <span className="mr-1 font-semibold">
+                &#x2022; Personal Information:
+              </span>{" "}
+              When you reach out to us via email, fill out forms, or sign up for
+              services, we collect details like your name, contact information,
+              and other relevant data.
             </p>
             <p className="text-[18px] leading-[21px] mt-3 ">
-              <span className="mr-3">&#x2022;</span> Lorem ipsum dolor sit amet
-              consectetur. Bibendum id
+              <span className="mr-1 font-semibold">
+                &#x2022; Usage Information:
+              </span>{" "}
+              We track how you interact with our website—this includes your IP
+              address, the pages you visit, and how long you spend on the site.
             </p>
             <p className="text-[18px] leading-[21px] mt-3 ">
-              <span className="mr-3">&#x2022;</span> Lorem ipsum dolor sit amet
-              consectetur. Bibendum id
-            </p>
-            <p className="text-[18px] leading-[21px] mt-3 ">
-              <span className="mr-3">&#x2022;</span> Lorem ipsum dolor sit amet
-              consectetur. Bibendum id
-            </p>
-            <p className="text-[18px] leading-[21px] mt-3 ">
-              <span className="mr-3">&#x2022;</span> Lorem ipsum dolor sit amet
-              consectetur. Bibendum id
+              <span className="mr-1 font-semibold">&#x2022; Service Data:</span>{" "}
+              We collect data related to the services you’ve requested or any
+              inquiries you’ve made to ensure we deliver exactly what you need.
             </p>
           </div>
         </div>
 
-        <div className="mt-20">
-          <h6 className="text-[23px] leading-[27px] font-bold">Lorem Ipsum</h6>
+        <div className="mt-14">
+          <h6 className="text-[23px] leading-[27px] font-bold">
+            Why Do We Collect This Information?
+          </h6>
+          <p className="text-[18px] leading-[21px] mt-3 ">
+            Your information is essential for us to deliver top-notch services,
+            communicate effectively with you, and ensure you have the best
+            experience on our site. Here’s how we use it:
+          </p>
           <div className="">
             <p className="text-[18px] leading-[21px] mt-3 ">
-              <span className="mr-3">&#x2022;</span> Lorem ipsum dolor sit amet
-              consectetur. Bibendum id
+              <span className="mr-1 font-semibold">
+                &#x2022; To Serve You Better:
+              </span>{" "}
+              We use your details to personalize and improve our services to
+              match your specific needs.
             </p>
             <p className="text-[18px] leading-[21px] mt-3 ">
-              <span className="mr-3">&#x2022;</span> Lorem ipsum dolor sit amet
-              consectetur. Bibendum id
+              <span className="mr-1 font-semibold">
+                &#x2022; To Stay Connected:
+              </span>{" "}
+              We’ll keep in touch to inform you about services, updates, and
+              special offers that may interest you.
             </p>
             <p className="text-[18px] leading-[21px] mt-3 ">
-              <span className="mr-3">&#x2022;</span> Lorem ipsum dolor sit amet
-              consectetur. Bibendum id
-            </p>
-            <p className="text-[18px] leading-[21px] mt-3 ">
-              <span className="mr-3">&#x2022;</span> Lorem ipsum dolor sit amet
-              consectetur. Bibendum id
-            </p>
-            <p className="text-[18px] leading-[21px] mt-3 ">
-              <span className="mr-3">&#x2022;</span> Lorem ipsum dolor sit amet
-              consectetur. Bibendum id
+              <span className="mr-1 font-semibold">
+                &#x2022; For Analytics:
+              </span>{" "}
+              We analyze how you engage with our site to optimize and refine
+              your experience.
             </p>
           </div>
         </div>
 
-        <div className="mt-20">
-          <h6 className="text-[23px] leading-[27px] font-bold">Lorem Ipsum</h6>
-          <p className="text-[18px] leading-[21px] mt-3 ">
-            Lorem ipsum dolor sit amet consectetur. Aliquam aliquam arcu eu nibh
-            diam tristique duis. Ut nunc in volutpat nulla odio fringilla
-            aliquet. Arcu diam eu nunc integer sollicitudin. Augue mi sociis
-            tincidunt eget faucibus donec consectetur. Penatibus mauris lectus
-            vitae tincidunt non quis ultricies eu. Consectetur amet leo arcu
-            quis faucibus ullamcorper lectus massa. Elementum ac urna nunc duis
-            ipsum velit cum tempus. Id amet eu imperdiet aliquam. Nisi dui
-            pellentesque tellus quam quis libero diam diam neque. Enim nisi
-            vulputate diam bibendum condimentum tellus sed nec lacus. Integer
-            auctor consectetur fermentum ultrices nec enim tellus turpis.
-            Eleifend nibh praesent sagittis integer. Non lorem in non id tempor.
-            Sed ut faucibus pulvinar imperdiet feugiat sit a. Pretium nisl velit
-            egestas tincidunt nec diam nisi. Sem quam ornare mattis at placerat.
-            Elit placerat varius eget sem nunc condimentum. Enim euismod lectus
-            lectus habitant gravida egestas augue tellus dolor. Euismod proin
-            phasellus lacus dolor et ornare. Curabitur malesuada fusce non odio
-            at tristique sit. Amet nibh amet volutpat aliquam pellentesque
-            viverra platea. Pretium scelerisque consectetur sagittis ut a dolor
-            non. Nulla condimentum ut nunc aliquam risus eget scelerisque nisl.
+        <div className="mt-14">
+          <h6 className="text-[23px] leading-[27px] font-bold">
+            Sharing Your Information
+          </h6>
+          <p className="text-[18px] leading-[21px] mt-3">
+            Rest assured, we won’t sell or rent your personal information.
+            However, we may share it in the following situations:
           </p>
+          <div className="">
+            <p className="text-[18px] leading-[21px] mt-3">
+              <span className="mr-1 font-semibold">
+                &#x2022; Trusted Partners:
+              </span>
+              We collaborate with trusted service providers who help us manage
+              our website or offer essential services to you. They are bound by
+              confidentiality agreements to protect your data.
+            </p>
+            <p className="text-[18px] leading-[21px] mt-3">
+              <span className="mr-1 font-semibold">
+                &#x2022; Legal Compliance:
+              </span>
+              We may share your information when required by law or to protect
+              our rights.
+            </p>
+          </div>
         </div>
 
-        <div className="mt-28">
+        <div className="mt-14">
+          <h6 className="text-[23px] leading-[27px] font-bold">
+            Keeping Your Information Safe
+          </h6>
+          <p className="text-[18px] leading-[21px] mt-3">
+            Your privacy is a top priority, so we take several precautions to
+            protect your data:
+          </p>
+          <div className="">
+            <p className="text-[18px] leading-[21px] mt-3">
+              <span className="mr-1 font-semibold">
+                &#x2022; Secure Data Transfer:
+              </span>
+              We use industry-standard encryption to safeguard your information
+              while it’s being transferred between your device and our servers.
+            </p>
+            <p className="text-[18px] leading-[21px] mt-3">
+              <span className="mr-1 font-semibold">
+                &#x2022; Access Control:
+              </span>
+              Only authorized personnel have access to your personal information
+              to ensure confidentiality.
+            </p>
+            <p className="text-[18px] leading-[21px] mt-3">
+              <span className="mr-1 font-semibold">
+                &#x2022; Physical and Digital Security:
+              </span>
+              Our facilities and systems are protected by robust security
+              measures to keep your data safe from unauthorized access.
+            </p>
+          </div>
+        </div>
+
+        <div className="mt-14">
+          <h6 className="text-[23px] leading-[27px] font-bold">
+            Your Rights and Choices
+          </h6>
+          <p className="text-[18px] leading-[21px] mt-3">
+            You have the power to manage your personal information. Here’s what
+            you can do:
+          </p>
+          <div className="">
+            <p className="text-[18px] leading-[21px] mt-3">
+              <span className="mr-1 font-semibold">
+                &#x2022; Access Your Data:
+              </span>
+              Want to see what information we hold about you? You can request a
+              copy of your personal data at any time.
+            </p>
+            <p className="text-[18px] leading-[21px] mt-3">
+              <span className="mr-1 font-semibold">
+                &#x2022; Make Corrections:
+              </span>
+              If your information is incorrect or incomplete, just let us know,
+              and we’ll update it for you.
+            </p>
+            <p className="text-[18px] leading-[21px] mt-3">
+              <span className="mr-1 font-semibold">&#x2022; Opt-Out:</span>
+              If you no longer want to receive promotional emails, you can
+              unsubscribe directly from the email or let us know via email at
+              <span className="text-blue-600">
+                {" "}
+                communication@domaincommunications.com
+              </span>
+              .
+            </p>
+            <p className="text-[18px] leading-[21px] mt-3">
+              <span className="mr-1 font-semibold">
+                &#x2022; Request Deletion:
+              </span>
+              If you’d like us to remove your personal information, you can
+              request deletion (subject to certain legal exceptions).
+            </p>
+          </div>
+        </div>
+
+        <div className="mt-14">
+          <h6 className="text-[23px] leading-[27px] font-bold">
+            Cookies—What Are They?
+          </h6>
+          <div className="">
+            <p className="text-[18px] leading-[21px] mt-3">
+              We use cookies to enhance your experience on our site. These small
+              files help us remember your preferences and improve our services.
+              You can adjust your browser settings to block cookies, but keep in
+              mind that this may limit certain website features.
+            </p>
+          </div>
+        </div>
+
+        <div className="mt-14">
+          <h6 className="text-[23px] leading-[27px] font-bold">
+            Keeping Your Data Safe
+          </h6>
+          <div className="">
+            <p className="text-[18px] leading-[21px] mt-3">
+              While we use advanced encryption and security measures to protect
+              your data, no method of internet communication is completely
+              foolproof. We can’t guarantee absolute security, but we’ll always
+              work hard to keep your information protected.
+            </p>
+          </div>
+        </div>
+
+        <div className="mt-14">
+          <h6 className="text-[23px] leading-[27px] font-bold">
+            Updates to This Policy
+          </h6>
+          <div className="">
+            <p className="text-[18px] leading-[21px] mt-3">
+              We may update this Privacy Policy periodically, and we’ll keep you
+              informed of any significant changes. Please review this page
+              regularly to stay informed about how we are protecting your
+              privacy.
+            </p>
+          </div>
+        </div>
+
+        <div className="mt-14">
           <div className="bg-[#E0E0EF] border border-[#E5E7EB] rounded-xl p-6">
             <h2 className="text-[24px] leading-[29px] font-semibold mb-2">
-              Contact Us
+              Have Questions?
             </h2>
             <p className="mb-4 text-[14px] leading-[18px]">
-              If you have any questions about this Privacy Policy, please
-              contact us:
+              We’re here to help! If you have any questions or concerns about
+              how we handle your information, feel free to reach out to us:
             </p>
             <div className="space-y-2">
               <div className="">
-                <a href="mailto:privacy@pragency.com">
+                <a href="mailto:communicate@branditcommunications.com">
                   <div className="flex items-center space-x-2">
                     <svg
                       width="16"
@@ -131,12 +265,14 @@ const page = () => {
                       />
                     </svg>
 
-                    <span className="">privacy@pragency.com</span>
+                    <span className="">
+                      communicate@branditcommunications.com
+                    </span>
                   </div>
                 </a>
               </div>
               <div className="">
-                <a href="tel:+15551234567">
+                <a href="tel:+919632299872">
                   <div className="flex items-center space-x-2">
                     <svg
                       width="14"
@@ -158,39 +294,9 @@ const page = () => {
                       </defs>
                     </svg>
 
-                    <span className="">+1 (555) 123-4567</span>
+                    <span className="">+91 9632299872</span>
                   </div>
                 </a>
-              </div>
-              <div className="flex items-center space-x-2">
-                <svg
-                  width="12"
-                  height="16"
-                  viewBox="0 0 12 16"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <g clipPath="url(#clip0_82_526)">
-                    <g clipPath="url(#clip1_82_526)">
-                      <path
-                        d="M6.74062 15.6C8.34375 13.5938 12 8.73125 12 6C12 2.6875 9.3125 0 6 0C2.6875 0 0 2.6875 0 6C0 8.73125 3.65625 13.5938 5.25938 15.6C5.64375 16.0781 6.35625 16.0781 6.74062 15.6ZM6 4C6.53043 4 7.03914 4.21071 7.41421 4.58579C7.78929 4.96086 8 5.46957 8 6C8 6.53043 7.78929 7.03914 7.41421 7.41421C7.03914 7.78929 6.53043 8 6 8C5.46957 8 4.96086 7.78929 4.58579 7.41421C4.21071 7.03914 4 6.53043 4 6C4 5.46957 4.21071 4.96086 4.58579 4.58579C4.96086 4.21071 5.46957 4 6 4Z"
-                        fill="#101133"
-                      />
-                    </g>
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_82_526">
-                      <rect width="12" height="16" fill="white" />
-                    </clipPath>
-                    <clipPath id="clip1_82_526">
-                      <path d="M0 0H12V16H0V0Z" fill="white" />
-                    </clipPath>
-                  </defs>
-                </svg>
-
-                <span className="">
-                  123 Business Street, Suite 100, New York, NY 10001
-                </span>
               </div>
             </div>
           </div>

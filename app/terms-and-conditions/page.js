@@ -12,69 +12,199 @@ const page = () => {
             Terms and Conditions
           </h2>
           <p className="text-[18px] leading-[21px] text-[#999999] mt-5">
-            Last updated: Jan 15, 2025
+            Last updated: Feb 12, 2025
           </p>
         </div>
       </div>
       <div className="text-[#1C1D58] px-16 py-20 max-container">
         <div className="">
-          <h6 className="text-[23px] leading-[27px] font-bold">Lorem Ipsum</h6>
-          <p className="text-[18px] leading-[21px] mt-3 ">
-            Lorem ipsum dolor sit amet consectetur. Bibendum id consectetur amet
-            nulla. Diam at morbi eget enim ultrices. Vitae ultricies ultrices
-            ipsum nunc non diam pretium vitae. Nulla aliquam interdum adipiscing
-            viverra sit imperdiet faucibus bibendum. Nullam quis diam.
+          <p className="text-[18px] leading-[21px]">
+            BrandiT Communications (hereinafter referred to as "BrandiT")
+            welcomes you to our website. We sincerely appreciate your interest
+            and kindly encourage you to review these terms and conditions before
+            using our services.
+          </p>
+          <p className="text-[18px] leading-[21px] mt-3">
+            These Terms and Conditions outline guidelines for accessing and
+            using (new website link) By continuing to use the website, you
+            acknowledge and agree to comply with these terms. If you have any
+            concerns or do not agree with any part of these terms, we
+            respectfully request that you refrain from using the website.
           </p>
         </div>
 
-        <div className="mt-20">
-          <h6 className="text-[23px] leading-[27px] font-bold">Lorem Ipsum</h6>
+        <div className="mt-10">
+          <h6 className="text-[23px] leading-[27px] font-bold">
+            1. Acceptance of Terms
+          </h6>
+          <p className="text-[18px] leading-[21px] mt-3">
+            By accessing any part of the website, you confirm your acceptance of
+            these terms and conditions. If you do not agree, we recommend
+            discontinuing use of the website. BrandiT reserves the right to
+            update these terms periodically, and continued use of the website
+            signifies your acceptance of any modifications.
+          </p>
+        </div>
+
+        <div className="mt-10">
+          <h6 className="text-[23px] leading-[27px] font-bold">
+            2. Use and Access of Website Information
+          </h6>
           <div className="">
-            <p className="text-[18px] leading-[21px] mt-3 ">
-              <span className="mr-3">&#x2022;</span> Lorem ipsum dolor sit amet
-              consectetur. Bibendum id
+            <p className="text-[18px] leading-[21px] mt-3">
+              Unless otherwise indicated, you are welcome to view, copy, print,
+              download, and distribute information available on this website
+              under the following conditions:
             </p>
-            <p className="text-[18px] leading-[21px] mt-3 ">
-              <span className="mr-3">&#x2022;</span> Lorem ipsum dolor sit amet
-              consectetur. Bibendum id
+            <p className="text-[18px] leading-[21px] mt-3 font-semibold">
+              <span className="mr-3">&#x2022;</span> The content is used solely
+              for personal, informational, or internal business purposes.
             </p>
-            <p className="text-[18px] leading-[21px] mt-3 ">
-              <span className="mr-3">&#x2022;</span> Lorem ipsum dolor sit amet
-              consectetur. Bibendum id
+            <p className="text-[18px] leading-[21px] mt-3 font-semibold">
+              <span className="mr-3">&#x2022;</span> The information remains
+              unmodified and retains its original integrity.
             </p>
-            <p className="text-[18px] leading-[21px] mt-3 ">
-              <span className="mr-3">&#x2022;</span> Lorem ipsum dolor sit amet
-              consectetur. Bibendum id
+            <p className="text-[18px] leading-[21px] mt-3 font-semibold">
+              <span className="mr-3">&#x2022;</span> Any distributed copies must
+              include BrandiT's copyright notice and this permission statement.
             </p>
-            <p className="text-[18px] leading-[21px] mt-3 ">
-              <span className="mr-3">&#x2022;</span> Lorem ipsum dolor sit amet
-              consectetur. Bibendum id
+            <p className="text-[18px] leading-[21px] mt-3 font-semibold">
+              <span className="mr-3">&#x2022;</span> BrandiT reserves the right
+              to revoke these permissions at any time.
+            </p>
+
+            <p className="text-[18px] leading-[21px] mt-5">
+              We kindly ask users to engage with the Website responsibly and
+              refrain from sharing or distributing content that violates any law
+              or infringes upon third-party rights.
             </p>
           </div>
         </div>
 
-        <div className="mt-20">
-          <h6 className="text-[23px] leading-[27px] font-bold">Lorem Ipsum</h6>
+        <div className="mt-10">
+          <h6 className="text-[23px] leading-[27px] font-bold">
+            3. Intellectual Property Rights
+          </h6>
           <div className="">
-            <p className="text-[18px] leading-[21px] mt-3 ">
-              <span className="mr-3">&#x2022;</span> Lorem ipsum dolor sit amet
-              consectetur. Bibendum id
+            <p className="text-[18px] leading-[21px] mt-3">
+              All content on this website, including but not limited to text,
+              images, logos, and software, is protected by copyright and other
+              intellectual property laws. The use of any content on the website
+              for commercial purposes, including reproduction, distribution, or
+              modification, is prohibited without prior authorization. Users are
+              requested to respect the intellectual property rights of BrandiT
+              and others. Unauthorized use or infringement may result in legal
+              action..
             </p>
-            <p className="text-[18px] leading-[21px] mt-3 ">
-              <span className="mr-3">&#x2022;</span> Lorem ipsum dolor sit amet
-              consectetur. Bibendum id
+          </div>
+        </div>
+
+        <div className="mt-10">
+          <h6 className="text-[23px] leading-[27px] font-bold">
+            4. Prohibited Activities
+          </h6>
+          <div className="">
+            <p className="text-[18px] leading-[21px] mt-3">
+              To ensure a safe and positive experience for all users, we kindly
+              request avoiding the following activities:
             </p>
-            <p className="text-[18px] leading-[21px] mt-3 ">
-              <span className="mr-3">&#x2022;</span> Lorem ipsum dolor sit amet
-              consectetur. Bibendum id
+            <p className="text-[18px] leading-[21px] mt-3 font-semibold">
+              <span className="mr-3">&#x2022;</span> Posting or sharing content
+              that is unlawful, offensive, or harmful.
             </p>
-            <p className="text-[18px] leading-[21px] mt-3 ">
-              <span className="mr-3">&#x2022;</span> Lorem ipsum dolor sit amet
-              consectetur. Bibendum id
+            <p className="text-[18px] leading-[21px] mt-3 font-semibold">
+              <span className="mr-3">&#x2022;</span> Engaging in activities that
+              could compromise the security, availability, or performance of the
+              website.
             </p>
-            <p className="text-[18px] leading-[21px] mt-3 ">
-              <span className="mr-3">&#x2022;</span> Lorem ipsum dolor sit amet
-              consectetur. Bibendum id
+            <p className="text-[18px] leading-[21px] mt-3 font-semibold">
+              <span className="mr-3">&#x2022;</span> Attempting to gain
+              unauthorized access to the website or its related systems.
+            </p>
+
+            <p className="text-[18px] leading-[21px] mt-5">
+              BrandiT reserves the right to take appropriate action, including
+              legal measures, against any violations of these policies.
+            </p>
+          </div>
+        </div>
+
+        <div className="mt-10">
+          <h6 className="text-[23px] leading-[27px] font-bold">
+            5. Availability of Services
+          </h6>
+          <div className="">
+            <p className="text-[18px] leading-[21px] mt-3">
+              While we strive to maintain seamless website functionality,
+              occasional technical issues may arise. We appreciate your
+              understanding that BrandiT is not liable for any temporary
+              unavailability due to factors beyond our control.
+            </p>
+          </div>
+        </div>
+
+        <div className="mt-10">
+          <h6 className="text-[23px] leading-[27px] font-bold">
+            6. Linking Policy
+          </h6>
+          <div className="">
+            <p className="text-[18px] leading-[21px] mt-3">
+              If you wish to create links to our website, we kindly request
+              obtaining prior written consent from BrandiT. Unauthorized linking
+              may result in legal action.
+            </p>
+          </div>
+        </div>
+
+        <div className="mt-10">
+          <h6 className="text-[23px] leading-[27px] font-bold">
+            7. Governing Law and Jurisdiction
+          </h6>
+          <div className="">
+            <p className="text-[18px] leading-[21px] mt-3">
+              These terms and conditions shall be governed by the laws of India.
+              Any disputes will be subject to the exclusive jurisdiction of the
+              courts in India 
+            </p>
+          </div>
+        </div>
+
+        <div className="mt-10">
+          <h6 className="text-[23px] leading-[27px] font-bold">
+            8. Privacy Policy
+          </h6>
+          <div className="">
+            <p className="text-[18px] leading-[21px] mt-3">
+              BrandiT values your privacy and is committed to protecting your
+              personal information. The website may collect data provided by
+              users during registration, content interactions, and analytics
+              tracking. Cookies may be used to enhance your experience, and
+              settings can be adjusted through your browser.
+            </p>
+          </div>
+        </div>
+
+        <div className="mt-10">
+          <h6 className="text-[23px] leading-[27px] font-bold">
+            9. Amendments
+          </h6>
+          <div className="">
+            <p className="text-[18px] leading-[21px] mt-3">
+              BrandiT reserves the right to update these terms and conditions.
+              Any changes will be reflected on this page before implementation.
+            </p>
+          </div>
+        </div>
+
+        <div className="mt-10">
+          <h6 className="text-[23px] leading-[27px] font-bold">
+            10. Contact Us
+          </h6>
+          <div className="">
+            <p className="text-[18px] leading-[21px] mt-3">
+              If you have any questions or concerns regarding these terms, we
+              warmly invite you to reach out to us via email at
+              communicate@branditcommunications.com. 
             </p>
           </div>
         </div>

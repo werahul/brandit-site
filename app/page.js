@@ -27,7 +27,7 @@ const page = () => {
       <Navbar />
       <HeroSection />
       <div className=" bg-white">
-      <AboutSection />
+        <AboutSection />
       </div>
       <div className="bg-[#EAEAF4] rounded-b-[80px]">
         <ServiceSection />
@@ -43,7 +43,8 @@ const page = () => {
           </div>
         </div>
       </div>
-      <FeaturedClients images={images} />
+      <FeaturedClients images={images} title="Featured Clients/Brands" />
+
       <IndustriesWeServe />
       <BlogNews />
       <TestimonialsCarousel />

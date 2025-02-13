@@ -2,6 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const CaseStudies = () => {
   const categories = ["Lorem", "Lorem", "Lorem", "Lorem", "Lorem", "Lorem"];
@@ -11,37 +12,49 @@ const CaseStudies = () => {
       id: 1,
       title: "Lorem Ipsum",
       description: "Lorem ipsum dolor sit amet",
-      image: "https://picsum.photos/id/237/400/400",
+      image: "/caseImages/cs1.png",
+      csLogo: "/iconImages/caseLogo1.svg",
+      nameTag: "Name TAG",
     },
     {
       id: 2,
       title: "Dolor Sit",
       description: "Consectetur adipiscing elit",
-      image: "https://picsum.photos/id/238/400/400",
+      image: "/caseImages/cs2.png",
+      csLogo: "/iconImages/caseLogo2.svg",
+      nameTag: "Name TAG",
     },
     {
       id: 3,
       title: "Amet Consectetur",
       description: "Sed do eiusmod tempor incididunt",
-      image: "https://picsum.photos/id/239/400/400",
+      image: "/caseImages/cs3.png",
+      csLogo: "/iconImages/caseLogo3.svg",
+      nameTag: "Name TAG",
     },
     {
       id: 4,
       title: "Eiusmod Tempor",
       description: "Labore et dolore magna aliqua",
-      image: "https://picsum.photos/id/230/400/400",
+      image: "/caseImages/cs4.png",
+      csLogo: "/iconImages/caseLogo4.svg",
+      nameTag: "Name TAG",
     },
     {
       id: 5,
       title: "Incididunt Ut",
       description: "Enim ad minim veniam",
-      image: "https://picsum.photos/id/232/400/400",
+      image: "/caseImages/cs5.png",
+      csLogo: "/iconImages/caseLogo5.svg",
+      nameTag: "Name TAG",
     },
     {
       id: 6,
       title: "Ut Labore",
       description: "Exercitation ullamco laboris",
-      image: "https://picsum.photos/id/233/400/400",
+      image: "/caseImages/cs6.png",
+      csLogo: "/iconImages/caseLogo6.svg",
+      nameTag: "Name TAG",
     },
   ];
 
@@ -54,27 +67,17 @@ const CaseStudies = () => {
   return (
     <div className="px-0 py-0 text-[#1C1D58]">
       {/* Header Section */}
+
       <motion.div
         className="flex justify-between items-center mb-8"
         initial="hidden"
         animate="visible"
         variants={fadeUp}
       >
-        <h2 className="text-h2 font-bold text-navy-900">Case Studies</h2>
-        <div className="flex gap-4">
-          {categories.map((category, index) => (
-            <motion.button
-              key={index}
-              className="text-sm font-regular hover:font-bold hover:underline transition-all duration-300 hover:text-gray-900"
-              initial="hidden"
-              animate="visible"
-              variants={fadeUp}
-              transition={{ delay: index * 0.1 }}
-            >
-              {category}
-            </motion.button>
-          ))}
-        </div>
+        <h2 className="text-h2 font-bold ">Impact Reports</h2>
+        <Link href="/work">
+          <span className="hover:underline">View All</span>
+        </Link>
       </motion.div>
 
       {/* Case Studies Grid */}
@@ -96,17 +99,18 @@ const CaseStudies = () => {
               className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
             />
 
+            {/* Title & Description */}
+
             {/* Green Overlay */}
-            <div className="absolute inset-0 bg-green-gradient opacity-0 group-hover:opacity-70 transition-opacity duration-300"></div>
+            <div className="absolute inset-0 bg-green-gradient opacity-0 group-hover:opacity-70 transition-opacity duration-300 cursor-pointer"></div>
 
             {/* Title & Description */}
-            <div className="absolute inset-0 flex flex-col items-center justify-end pb-10 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-center px-4">
-              <h3 className="text-[20px] font-semibold">{item.title}</h3>
-              <p className="text-[14px]">{item.description}</p>
+            <div className="absolute inset-0 flex flex-col items-center justify-end  text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-center bottom-0 w-full">
+              <img src="/caseStudyBgElement.png" alt="" />
             </div>
 
             {/* Redirect Arrow */}
-            <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 cursor-pointer">
               <svg
                 width="49"
                 height="49"
@@ -131,6 +135,11 @@ const CaseStudies = () => {
                   </clipPath>
                 </defs>
               </svg>
+            </div>
+
+            <div className="absolute  flex flex-col items-center justify-end  text-white opacity-100 group-hover:opacity-100 transition-opacity duration-300 text-center bottom-[18px] w-full">
+              <img src={item.csLogo} alt={item.nameTag} />
+              <p className="text-[14px] text-white py-1">{item.nameTag}</p>
             </div>
           </motion.div>
         ))}

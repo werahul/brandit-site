@@ -20,6 +20,13 @@ body {
   @apply ml-auto max-w-[1440px];
 }
 
+.heroBG {
+  background: url("/hero.gif");
+  background-repeat: no-repeat;
+  height: 850px;
+  background-size: cover;
+}
+
 .marquee {
   display: flex;
   margin: 0 auto;

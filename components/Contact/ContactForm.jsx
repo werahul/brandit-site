@@ -10,41 +10,50 @@ const ContactForm = () => {
         <div>
           <label
             htmlFor="fullName"
-            className="block text-[20px] text-black mb-2"
+            className="block text-[20px] text-[#1C1D58] mb-2"
           >
             Full Name
           </label>
           <input
             type="text"
             id="fullName"
-            className="w-full border border-[#D7D7D7] placeholder-gray-400 rounded-lg py-3 px-4 focus:outline-none focus:ring-2 focus:ring-green-500"
+            className="w-full border border-[#1C1D58] placeholder-gray-400 rounded-lg py-3 px-4 focus:outline-none focus:ring-2 focus:ring-green-500"
             placeholder="Enter your full name"
           />
         </div>
 
         <div>
-          <label htmlFor="email" className="block text-[20px] text-black mb-2">
+          <label
+            htmlFor="email"
+            className="block text-[20px] text-[#1C1D58] mb-2"
+          >
             Email
           </label>
           <input
             type="email"
             id="email"
-            className="w-full border border-[#D7D7D7] placeholder-gray-400 rounded-lg py-3 px-4 focus:outline-none focus:ring-2 focus:ring-green-500"
+            className="w-full border border-[#1C1D58] placeholder-gray-400 rounded-lg py-3 px-4 focus:outline-none focus:ring-2 focus:ring-green-500"
             placeholder="Enter your email"
           />
         </div>
 
         {/* Service as Radio Toggle */}
         <div>
-          <p className="block text-[20px] text-black mb-2">Service</p>
-          <div className="flex space-x-4">
-            {["Option 1", "Option 2", "Option 3"].map((service, index) => (
+          <p className="block text-[20px] text-[#1C1D58] mb-2">Service</p>
+          <div className="flex flex-wrap gap-4">
+            {[
+              "Brand Storytelling",
+              "Public Relations",
+              "Influencer Marketing",
+              "Guestlist Curation",
+              "Brand Strategy Consulting",
+            ].map((service, index) => (
               <label
                 key={index}
-                className={`flex items-center gap-x-2 px-5 py-3 border rounded-[40px] text-[16px] cursor-pointer ${
+                className={`flex items-center gap-x-2 hover:opacity-95 px-5 py-3 border rounded-[40px] text-[16px] cursor-pointer ${
                   selectedService === service
-                    ? "bg-green-500 text-white"
-                    : "bg-white border-[#D7D7D7] text-black  opacity-70"
+                    ? "text-[#45D400] border border-[#45D400]"
+                    : "bg-white border-[#1C1D58] text-[#1C1D58]  opacity-70"
                 }`}
               >
                 <input
@@ -60,42 +69,16 @@ const ContactForm = () => {
           </div>
         </div>
 
-        {/* Budget as Radio Toggle */}
-        <div>
-          <p className="block text-[20px] text-black mb-2">Budget</p>
-          <div className="flex space-x-4">
-            {["Option 1", "Option 2", "Option 3"].map((budget, index) => (
-              <label
-                key={index}
-                className={`flex items-center gap-x-2 px-5 py-3 border rounded-[40px] text-[16px] cursor-pointer ${
-                  selectedBudget === budget
-                    ? "bg-green-500 text-white"
-                    : "bg-white border-[#D7D7D7] text-black opacity-70"
-                }`}
-              >
-                <input
-                  type="radio"
-                  name="budget"
-                  value={budget}
-                  className="hidden"
-                  onChange={() => setSelectedBudget(budget)}
-                />
-                <span>{budget}</span>
-              </label>
-            ))}
-          </div>
-        </div>
-
         <div>
           <label
             htmlFor="message"
-            className="block text-[20px] text-black mb-2"
+            className="block text-[20px] text-[#1C1D58] mb-2"
           >
             Message
           </label>
           <textarea
             id="message"
-            className="w-full border border-[#D7D7D7] placeholder-gray-400 rounded-lg py-3 px-4 focus:outline-none focus:ring-2 focus:ring-green-500 resize-none h-[80px]"
+            className="w-full border border-[#1C1D58] placeholder-gray-400 rounded-lg py-3 px-4 focus:outline-none focus:ring-2 focus:ring-green-500 resize-none h-[80px]"
             placeholder="Enter your message"
           ></textarea>
         </div>

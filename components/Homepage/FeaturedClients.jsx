@@ -13,15 +13,17 @@ const raiseFromBottom = {
   },
 };
 
-const FeaturedClients = ({ images }) => {
+const FeaturedClients = ({ images, title }) => {
   const sectionRef = useRef(null);
   const isInView = useInView(sectionRef, { threshold: 0.3 }); // Trigger when 30% of the section is visible
 
   return (
     <div>
       {/* Partner Logos Section */}
-      <div className="pt-[90px] bg-white " ref={sectionRef}>
-      <h6 className="text-[23px] leading-[27px] text-center text-[#1C1D58]">Featured Clinets/Brands</h6>
+      <div className="pt-[90px]" ref={sectionRef}>
+        <h6 className="text-[23px] leading-[27px] text-center text-[#1C1D58]">
+          {title}
+        </h6>
         <motion.div
           className="marquee"
           variants={raiseFromBottom}

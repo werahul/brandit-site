@@ -1,40 +1,60 @@
 "use client";
 
-import React from 'react';
-import { motion } from 'framer-motion';
+import React from "react";
+import { motion } from "framer-motion";
 
 const IndustriesWeServe = () => {
   const industries = [
     {
-      name: 'Entertainment',
-      image: 'https://picsum.photos/id/237/200/200',
-      bgColor: 'bg-gray-200'
+      name: "B2B",
+      image: "/images/in1.png",
+      bgColor: "bg-gray-200",
     },
     {
-      name: 'Jewelry',
-      image: 'https://picsum.photos/id/231/200/200',
-      bgColor: 'bg-pink-100'
+      name: "Beauty",
+      image: "/images/in2.png",
+      bgColor: "bg-pink-100",
     },
     {
-      name: 'Green energy',
-      image: 'https://picsum.photos/id/232/200/200',
-      bgColor: 'bg-green-100'
+      name: "Renewable Energy",
+      image: "/images/in3.png",
+      bgColor: "bg-green-100",
     },
     {
-      name: 'Travel',
-      image: 'https://picsum.photos/id/233/200/200',
-      bgColor: 'bg-yellow-100'
+      name: "District Cooling",
+      image: "/images/in4.png",
+      bgColor: "bg-yellow-100",
     },
     {
-      name: 'Tech',
-      image: 'https://picsum.photos/id/234/200/200',
-      bgColor: 'bg-black'
+      name: "Biofuels",
+      image: "/images/in5.png",
+      bgColor: "bg-black",
     },
     {
-      name: 'Fashion',
-      image: 'https://picsum.photos/id/235/200/200',
-      bgColor: 'bg-cream-100'
-    }
+      name: "Auto",
+      image: "/images/in6.png",
+      bgColor: "bg-cream-100",
+    },
+    {
+      name: "Luxury",
+      image: "/images/in7.png",
+      bgColor: "bg-cream-100",
+    },
+    {
+      name: "Fashion",
+      image: "/images/in8.png",
+      bgColor: "bg-cream-100",
+    },
+    {
+      name: "Hospitality",
+      image: "/images/in9.png",
+      bgColor: "bg-cream-100",
+    },
+    {
+      name: "EV",
+      image: "/images/in10.png",
+      bgColor: "bg-cream-100",
+    },
   ];
 
   // Animation variants
@@ -45,15 +65,19 @@ const IndustriesWeServe = () => {
       y: 0,
       transition: {
         duration: 0.6,
-        ease: 'easeOut',
-        staggerChildren: 0.2
-      }
-    }
+        ease: "easeOut",
+        staggerChildren: 0.2,
+      },
+    },
   };
 
   const itemVariants = {
     hidden: { opacity: 0, y: 30 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: 'easeOut' } }
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.5, ease: "easeOut" },
+    },
   };
 
   return (
@@ -73,26 +97,24 @@ const IndustriesWeServe = () => {
         </motion.h2>
 
         <motion.div
-          className="flex flex-row space-x-7"
+          className="grid grid-cols-5 gap-6"
           variants={containerVariants}
         >
           {industries.map((industry, index) => (
             <motion.div
               key={index}
-              className="group cursor-pointer w-[190px] h-[126px]"
+              className="group  w-full h-[200px] "
               variants={itemVariants}
             >
               <div className="rounded-lg overflow-hidden mb-2">
                 <motion.img
                   src={industry.image}
                   alt={industry.name}
-                  className="w-full h-32 object-cover transition-transform duration-300 group-hover:scale-105"
+                  className="w-full h-[151px] object-cover transition-transform duration-300 group-hover:scale-105"
                   whileHover={{ scale: 1.1 }}
                 />
               </div>
-              <p className="text-center text-[14px]">
-                {industry.name}
-              </p>
+              <p className="text-center text-[14px]">{industry.name}</p>
             </motion.div>
           ))}
         </motion.div>
