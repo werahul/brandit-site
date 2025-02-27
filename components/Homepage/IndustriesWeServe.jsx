@@ -88,22 +88,22 @@ const IndustriesWeServe = () => {
       viewport={{ once: true, amount: 0.2 }}
       variants={containerVariants}
     >
-      <div className="text-[#1C1D58] max-container px-16 py-[120px]">
+      <div className="text-[#1C1D58] max-container lg:px-16 px-5 lg:py-[120px] py-20">
         <motion.h2
-          className="text-h2 font-bold text-navy-900 mb-8"
+          className="lg:text-h2 text-[44px] leading-[44px] lg:leading-[55px] font-bold mb-9"
           variants={itemVariants}
         >
           Industries We Serve
         </motion.h2>
 
         <motion.div
-          className="grid grid-cols-5 gap-6"
+          className="lg:grid flex lg:overflow-hidden overflow-x-scroll grid-cols-5 gap-6"
           variants={containerVariants}
         >
           {industries.map((industry, index) => (
             <motion.div
               key={index}
-              className="group  w-full h-[200px] "
+              className="group  lg:w-full min-w-[200px] h-[200px] "
               variants={itemVariants}
             >
               <div className="rounded-lg overflow-hidden mb-2">

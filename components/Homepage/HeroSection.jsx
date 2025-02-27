@@ -33,15 +33,15 @@ const HeroSection = () => {
   return (
     <div className="heroBG">
       <motion.div
-        className="max-container text-[#FFFFFF] flex items-center justify-between px-16 pt-[280px] pb-[183px]"
+        className="max-container text-[#FFFFFF] lg:flex items-center justify-between lg:px-16 px-5 lg:pt-[280px] pt-[180px] lg:pb-[183px] pb-[100px]"
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, ease: "easeInOut" }}
       >
         {/* Left Section */}
-        <div className="w-[70%]">
+        <div className="lg:w-[70%] w-[100%]">
           <motion.h1
-            className="text-h1"
+            className="lg:text-h1 text-[50px] lg:leading-[86px] leading-[66px]"
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1, delay: 0.2, ease: "easeInOut" }}
@@ -52,23 +52,24 @@ const HeroSection = () => {
           </motion.h1>
 
           <motion.p
-            className="text-[23px] leading-[27px] mt-6"
+            className="lg:text-[23px] text-[18px] lg:leading-[27px] leading-[21px] lg:mt-6 mt-2"
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1, delay: 0.4, ease: "easeInOut" }}
           >
-            We craft compelling narratives that resonate with your <br />{" "}
-            audience and build lasting relationships.
+            We craft compelling narratives that resonate with your{" "}
+            <br className="lg:block hidden" /> audience and build lasting
+            relationships.
           </motion.p>
 
           <motion.div
-            className="cta mt-10"
+            className="cta lg:mt-10 mt-6"
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.6, ease: "easeInOut" }}
           >
             <Link href="/about">
-              <button className="relative w-[150px] h-[56px] bg-gradient-to-r from-[#45D400] to-[#45D400] text-black text-[16px] rounded-[40px] overflow-hidden group">
+              <button className="relative lg:w-[150px] w-[143px] h-[56px] bg-gradient-to-r from-[#45D400] to-[#45D400] text-black text-[16px] rounded-[40px] overflow-hidden group">
                 <span className="absolute inset-0 bg-gradient-to-r from-[#45D400] via-[#36BA00] to-[#45D400] transition-transform scale-0 group-hover:scale-100 group-hover:rotate-180 duration-500 ease-in-out rounded-[40px]"></span>
                 <span className="relative z-10 block text-center group-hover:text-white transition-transform duration-300 ease-in-out group-hover:scale-110">
                   Know More
@@ -81,7 +82,7 @@ const HeroSection = () => {
 
         {/* Right Section (Social Icons) */}
         <motion.div
-          className="flex flex-col space-y-3"
+          className="flex lg:flex-col gap-3 mt-[120px]"
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{

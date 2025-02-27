@@ -1,12 +1,51 @@
 import React, { useState } from "react";
+import emailjs from "@emailjs/browser";
 
 const ContactForm = () => {
   const [selectedService, setSelectedService] = useState("");
-  const [selectedBudget, setSelectedBudget] = useState("");
+  const [formData, setFormData] = useState({
+    fullName: "",
+    email: "",
+    message: "",
+  });
 
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    const templateParams = {
+      fullName: formData.fullName,
+      email: formData.email,
+      service: selectedService,
+      message: formData.message,
+    };
+
+    emailjs
+      .send(
+        "service_e3ysp7m", // Replace with your EmailJS Service ID
+        "template_voeo1qk", // Replace with your EmailJS Template ID
+        templateParams,
+        "65UTPFnp2dSADJw-6" // Replace with your EmailJS Public Key
+      )
+      .then(
+        (response) => {
+          console.log("Email sent successfully!", response);
+          alert("Message sent successfully!");
+          setFormData({ fullName: "", email: "", message: "" });
+          setSelectedService("");
+        },
+        (error) => {
+          console.error("Failed to send email", error);
+          alert("Failed to send message, please try again.");
+        }
+      );
+  };
   return (
-    <div className="bg-white p-10 rounded-[20px] w-[100%]">
-      <form className="space-y-6">
+    <div className="bg-white lg:p-10 p-6 rounded-[20px] w-[100%]">
+      <form onSubmit={sendEmail} className="space-y-6">
         <div>
           <label
             htmlFor="fullName"
@@ -17,8 +56,12 @@ const ContactForm = () => {
           <input
             type="text"
             id="fullName"
+            name="fullName"
+            value={formData.fullName}
+            onChange={handleChange}
             className="w-full border border-[#1C1D58] placeholder-gray-400 rounded-lg py-3 px-4 focus:outline-none focus:ring-2 focus:ring-green-500"
             placeholder="Enter your full name"
+            required
           />
         </div>
 
@@ -32,12 +75,15 @@ const ContactForm = () => {
           <input
             type="email"
             id="email"
+            name="email"
+            value={formData.email}
+            onChange={handleChange}
             className="w-full border border-[#1C1D58] placeholder-gray-400 rounded-lg py-3 px-4 focus:outline-none focus:ring-2 focus:ring-green-500"
             placeholder="Enter your email"
+            required
           />
         </div>
 
-        {/* Service as Radio Toggle */}
         <div>
           <p className="block text-[20px] text-[#1C1D58] mb-2">Service</p>
           <div className="flex flex-wrap gap-4">
@@ -62,6 +108,7 @@ const ContactForm = () => {
                   value={service}
                   className="hidden"
                   onChange={() => setSelectedService(service)}
+                  required
                 />
                 <span>{service}</span>
               </label>
@@ -78,8 +125,12 @@ const ContactForm = () => {
           </label>
           <textarea
             id="message"
+            name="message"
+            value={formData.message}
+            onChange={handleChange}
             className="w-full border border-[#1C1D58] placeholder-gray-400 rounded-lg py-3 px-4 focus:outline-none focus:ring-2 focus:ring-green-500 resize-none h-[80px]"
             placeholder="Enter your message"
+            required
           ></textarea>
         </div>
 

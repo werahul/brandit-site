@@ -1,7 +1,7 @@
 "use client";
 
-import React from "react";
-import { motion } from "framer-motion";
+import React, { useRef } from "react";
+import { motion, useAnimationFrame } from "framer-motion";
 
 // SVG as a reusable component
 const IconSVG = () => (
@@ -20,20 +20,25 @@ const IconSVG = () => (
 );
 
 const items = [
-  { text: "Lorem Ipsum", icon: IconSVG },
-  { text: "Dolor Sit", icon: IconSVG },
-  { text: "Amet Consectetur", icon: IconSVG },
-  { text: "Adipiscing Elit", icon: IconSVG },
+  { text: "Join our team", icon: IconSVG },
+  { text: "Unlock growth", icon: IconSVG },
+  { text: "Excel with us", icon: IconSVG },
+  { text: "Lead & grow", icon: IconSVG },
 ];
 
 const AutoScroll = () => {
+  const containerRef = useRef(null);
+
   return (
-    <div className="bg-white pl-16 min-h-screen flex items-end mt-0 pb-20 z-0 overflow-hidden">
+    <div
+      ref={containerRef}
+      className="bg-white pl-16 lg:h-[640px] h-[280px] flex items-end mt-0 lg:pb-20 pb-10 z-0 overflow-hidden "
+    >
       <motion.div
         className="flex flex-row whitespace-nowrap space-x-5"
-        animate={{ x: ["0%", "-100%"] }}
+        animate={{ x: ["0%", "-50%"] }} // Move only half to seamlessly repeat
         transition={{
-          duration: 15,
+          duration: 8, // Faster duration for smooth effect
           repeat: Infinity,
           ease: "linear",
         }}
@@ -42,8 +47,8 @@ const AutoScroll = () => {
         {/* Duplicated Items for Seamless Infinite Scroll */}
         {[...items, ...items].map((item, index) => (
           <div key={index} className="flex items-center space-x-5">
-            {<item.icon />}
-            <p className="text-[#1C1D58] text-[60px]">{item.text}</p>
+            <item.icon />
+            <p className="text-[#1C1D58] lg:text-[60px] text-[44px]">{item.text}</p>
           </div>
         ))}
       </motion.div>

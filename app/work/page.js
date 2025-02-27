@@ -8,19 +8,19 @@ import WorkListing from "@/components/WorkPage/WorkListing";
 
 const page = () => {
   return (
-    <div className="bg-[#002A00]">
+    <div className="bg-[#002A00] overflow-hidden">
       <Navbar />
 
-      <div className="bg-[#002A00] pb-40 ">
-        <div className=" max-container text-white px-16 pt-[280px] pb-0 flex items-center space-x-40">
-          <div>
+      <div className="bg-[#002A00] lg:pb-40 pb-20 ">
+        <div className=" max-container text-white lg:px-16 px-5   lg:pt-[280px] pt-[140px] pb-0 lg:flex items-center lg:space-x-40">
+          <div className="lg:w-[73%]">
             <motion.h1
-              className="text-h1 font-semibold"
+              className="lg:text-h1 lg:leading-[86px] text-[55px] leading-[55px] font-semibold"
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 1, delay: 0.2, ease: "easeInOut" }}
             >
-              Lorem ipsum dolor sit <br /> amet consectetur.
+              Bringing brands to life with stories that engage <br className="lg:hidden block" /> & endure
             </motion.h1>
           </div>
         </div>

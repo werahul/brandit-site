@@ -31,26 +31,61 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-[#002A00] text-white ">
-      <div className="max-container px-16 pt-[100px] pb-10">
-        <div className="flex flex-row space-x-10 pb-20">
+    <footer className="bg-[#002A00] text-white mt-0 lg:mt-0 ">
+      <div className="max-container lg:px-16 px-5 lg:pt-[100px] pt-[40px] lg:pb-10 pb-5">
+        <div className="lg:flex flex-row lg:space-x-10 lg:pb-20 pb-5">
           {/* Brand Section */}
-          <div className=" w-[50%]">
-            <div className="logo">
+          <div className=" lg:w-[50%]">
+            <div className="logo flex justify-between items-center">
               <Image
-                className=""
+                className="lg:w-[275px] lg:h-[76px] w-[146px] h-[50px]"
                 src="/mainLogo.svg"
                 alt="pinterest logo"
                 width={275}
                 height={76}
               />
+
+              <motion.div
+                className="flex lg:hidden  space-x-3"
+                initial={{ opacity: 0, x: 50 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{
+                  duration: 1,
+                  delay: 0.8,
+                  ease: "easeInOut",
+                }}
+              >
+                {icons.map((icon, index) => (
+                  <motion.a
+                    key={index}
+                    href={icon.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onMouseEnter={() => setHoveredIcon(icon.default)}
+                    onMouseLeave={() => setHoveredIcon(null)}
+                    whileHover={{ scale: 1.2 }}
+                    transition={{ type: "spring", stiffness: 300 }}
+                    className="cursor-pointer"
+                  >
+                    <Image
+                      src={
+                        hoveredIcon === icon.default ? icon.hover : icon.default
+                      }
+                      alt={icon.alt}
+                      width={30}
+                      height={30}
+                    />
+                  </motion.a>
+                ))}
+              </motion.div>
             </div>
-            <p className="text-[#CCCCCC] text-[14px] leading-[18px] mt-[35px] mb-5">
-              Elevating your brand with dynamic PR <br /> that captures
-              attention, builds trust, and <br /> drives real results.
+            <p className="text-[#CCCCCC] text-[14px] leading-[18px] lg:mt-[35px] mt-[32px] lg:mb-5">
+              Elevating your brand with dynamic PR{" "}
+              <br className="lg:block hidden" /> that captures attention, builds
+              trust, and <br className="lg:block hidden" /> drives real results.
             </p>
             <motion.div
-              className="flex  space-x-3"
+              className="lg:flex hidden  space-x-3"
               initial={{ opacity: 0, x: 50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{
@@ -83,11 +118,11 @@ const Footer = () => {
               ))}
             </motion.div>
           </div>
-          <div className="w-[40%] flex flex-row justify-between">
+          <div className="lg:w-[40%] lg:flex flex-row justify-between lg:mt-0 mt-8">
             {/* Quick Links */}
             <div className="">
               <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
-              <ul className="space-y-5 text-[14px] leading-[16px]">
+              <ul className="lg:space-y-5 space-y-4 text-[14px] leading-[16px]">
                 <li>
                   <Link
                     href="/about"
@@ -133,8 +168,10 @@ const Footer = () => {
 
             {/* Get in Touch */}
             <div>
-              <h3 className="text-lg font-semibold mb-4">Get in Touch</h3>
-              <ul className="space-y-5 text-[14px] leading-[16px]">
+              <h3 className="text-lg font-semibold mb-4 lg:mt-0 mt-8">
+                Get in Touch
+              </h3>
+              <ul className="lg:space-y-5 space-y-4 text-[14px] leading-[16px]">
                 <div className="flex items-start space-x-2">
                   <div>
                     <svg
@@ -204,14 +241,13 @@ const Footer = () => {
                   <div>
                     <svg
                       width="16"
-                      height="16"
-                      viewBox="0 0 16 16"
+                      height="13"
+                      viewBox="0 0 16 13"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
                     >
-                      <path d="M0 0H16V16H0V0Z" stroke="#E5E7EB" />
                       <path
-                        d="M1.5 2C0.671875 2 0 2.67188 0 3.5C0 3.97187 0.221875 4.41562 0.6 4.7L7.4 9.8C7.75625 10.0656 8.24375 10.0656 8.6 9.8L15.4 4.7C15.7781 4.41562 16 3.97187 16 3.5C16 2.67188 15.3281 2 14.5 2H1.5ZM0 5.5V12C0 13.1031 0.896875 14 2 14H14C15.1031 14 16 13.1031 16 12V5.5L9.2 10.6C8.4875 11.1344 7.5125 11.1344 6.8 10.6L0 5.5Z"
+                        d="M1.5 0.862305C0.671875 0.862305 0 1.53418 0 2.3623C0 2.83418 0.221875 3.27793 0.6 3.5623L7.4 8.6623C7.75625 8.92793 8.24375 8.92793 8.6 8.6623L15.4 3.5623C15.7781 3.27793 16 2.83418 16 2.3623C16 1.53418 15.3281 0.862305 14.5 0.862305H1.5ZM0 4.3623V10.8623C0 11.9654 0.896875 12.8623 2 12.8623H14C15.1031 12.8623 16 11.9654 16 10.8623V4.3623L9.2 9.46231C8.4875 9.99668 7.5125 9.99668 6.8 9.46231L0 4.3623Z"
                         fill="#9CA3AF"
                       />
                     </svg>
@@ -228,26 +264,28 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="flex items-center flex-col justify-center whitespace-nowrap py-12 border-t border-green-800">
-          <p className="text-[28px] font-bold">
+        <div className="flex items-center flex-col justify-center lg:whitespace-nowrap lg:py-12 py-5 border-t border-green-800">
+          <p className="lg:text-[28px] text-[24px] lg:leading-relaxed leading-[28px] font-bold">
             Is this the brand boost you’ve been waiting for?
           </p>
-          <p className="text-[14px] mt-2">
+          <p className="text-[14px] leading-[16px] mt-2 text-[#999999]">
             Connect with us and elevate your brand story to the next level.
           </p>
           <div className="cta mt-7">
-            <button className="relative w-auto px-5 h-[56px] bg-gradient-to-r from-[#45D400] to-[#45D400] text-black text-[16px]  rounded-[40px] overflow-hidden group">
-              <span className="absolute inset-0 bg-gradient-to-r from-[#45D400] via-[#36BA00] to-[#45D400] transition-transform scale-0 group-hover:scale-100 group-hover:rotate-180 duration-500 ease-in-out rounded-[40px]"></span>
-              <span className="relative z-10 block text-center group-hover:text-white transition-transform duration-300 ease-in-out group-hover:scale-110">
-                Let's get started
-              </span>
-              <span className="absolute -inset-1 bg-black opacity-0 group-hover:opacity-10 transition-opacity duration-300 rounded-[40px]"></span>
-            </button>
+            <Link href="/contact">
+              <button className="relative lg:w-auto w-[80vw] px-5 h-[56px] bg-gradient-to-r from-[#45D400] to-[#45D400] text-black text-[16px]  rounded-[40px] overflow-hidden group">
+                <span className="absolute inset-0 bg-gradient-to-r from-[#45D400] via-[#36BA00] to-[#45D400] transition-transform scale-0 group-hover:scale-100 group-hover:rotate-180 duration-500 ease-in-out rounded-[40px]"></span>
+                <span className="relative z-10 block text-center group-hover:text-white transition-transform duration-300 ease-in-out group-hover:scale-110">
+                  Let's get started
+                </span>
+                <span className="absolute -inset-1 bg-black opacity-0 group-hover:opacity-10 transition-opacity duration-300 rounded-[40px]"></span>
+              </button>
+            </Link>
           </div>
         </div>
 
         {/* Bottom Section */}
-        <div className="mt-0 pt-4 border-t border-green-800 flex flex-col md:flex-row justify-between items-center text-[14px] leading-[14px] text-[#CCCCCC]">
+        <div className="mt-0 pt-4 border-t border-green-800 flex flex-col md:flex-row justify-between lg:items-center text-[14px] leading-[14px] text-[#CCCCCC]">
           <p>&copy; {currentYear} brandit. All rights reserved</p>
           <div className="flex space-x-4 mt-4 md:mt-0">
             <Link href="/privacy-policy" className="hover:text-white">

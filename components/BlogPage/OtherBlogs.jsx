@@ -1,66 +1,59 @@
+import Link from "next/link";
 import React from "react";
 
-const OtherBlogs = () => {
-  const blogs = [
-    {
-      id: 1,
-      title: "Lorem ipsum dolor sit amet consectetur. Sagittis",
-      service: "Service 6",
-      image: "https://picsum.photos/id/134/400/400",
-      description: "Lorem ipsum",
-    },
-    {
-      id: 2,
-      title: "Lorem ipsum dolor sit amet consectetur. Sagittis",
-      service: "Service 4",
-      image: "https://picsum.photos/id/144/400/400",
-      description: "Lorem ipsum",
-    },
-    {
-      id: 3,
-      title: "Lorem ipsum dolor sit amet consectetur. Sagittis",
-      service: "Service 2",
-      image: "https://picsum.photos/id/154/400/400",
-      description: "Lorem ipsum",
-    },
-  ];
-
+const OtherBlogs = ({ blogs }) => {
   return (
     <div className="bg-white text-[#1C1D58] pt-10 px-0">
-      <div className="">
+      <div>
         <div className="flex justify-between items-center mb-12">
-          <h2 className="text-h2 font-bold ">Other Blogs</h2>
-          <span className="">Lorem ipsum</span>
+          <h2 className="lg:text-h2 text-[44px] lg:leading-[55px] leading-[44px] font-bold">
+            Other Perspectives
+          </h2>
+          <Link href="/blogs" className="hidden lg:block hover:underline">
+            View All
+          </Link>
         </div>
 
         <div className="grid lg:grid-cols-3 gap-6">
-          {blogs.map((blog) => (
-            <div
-              key={blog.id}
-              className="relative rounded-lg overflow-hidden cursor-pointer group h-[397px] transition-all duration-300"
-            >
-              {/* Overlay */}
-              <div className="absolute inset-0 bg-[#D9E7D9] opacity-100 transition-opacity duration-300 group-hover:opacity-0"></div>
+          {blogs.map((blog, index) => (
+            <Link key={blog.id} href={blog.path}>
+              <div
+                className={`relative rounded-lg overflow-hidden cursor-pointer group h-[397px] transition-all duration-300 ${
+                  index >= 3 ? "hidden lg:block" : ""
+                }`}
+              >
+                {/* Overlay */}
+                <div className="absolute inset-0 bg-[#D9E7D9] transition-opacity duration-300 group-hover:opacity-0"></div>
 
-              {/* Image */}
-              <img
-                src={blog.image}
-                alt={blog.title}
-                className="w-full h-full object-cover scale-105 opacity-0 transition-all duration-300 group-hover:opacity-100 group-hover:scale-100"
-              />
+                {/* Dark Overlay */}
+                <div className="absolute inset-0 bg-black opacity-0 transition-opacity duration-300 group-hover:opacity-40"></div>
 
-              {/* Service Tag */}
-              <span className="absolute top-4 left-4 px-3 py-1 rounded-full text-sm bg-white ">
-                {blog.service}
-              </span>
+                {/* Image */}
+                <img
+                  src={blog.image}
+                  alt={blog.title}
+                  className="w-full h-full object-cover scale-105 opacity-0 transition-all duration-300 group-hover:opacity-100 group-hover:scale-100"
+                />
 
-              {/* Content */}
-              <div className="p-6 absolute bottom-0 left-0 w-full">
-                <p className="text-sm mb-2">{blog.description}</p>
-                <h3 className="text-lg font-semibold">{blog.title}</h3>
+                {/* Service Tag */}
+                <span className="absolute top-4 left-4 px-3 py-1 bg-white text-[#1C1D58] text-sm rounded">
+                  {blog.service}
+                </span>
+
+                {/* Content */}
+                <div className="p-6 absolute bottom-0 left-0 w-full">
+                  <h3 className="text-[20px] lg:text-[24px] leading-[28px] transition-colors duration-300 group-hover:text-white">
+                    {blog.title}
+                  </h3>
+                </div>
               </div>
-            </div>
+            </Link>
           ))}
+        </div>
+        <div className="lg:hidden mt-8 flex items-center justify-center">
+          <Link href="/blogs">
+            <span className="hover:underline">View All</span>
+          </Link>
         </div>
       </div>
     </div>

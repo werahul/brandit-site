@@ -6,9 +6,9 @@ const page = () => {
   return (
     <div>
       <Navbar />
-      <div className=" bg-[#003800] rounded-b-[80px] pb-20 text-white pt-[280px] ">
-        <div className="max-container px-16">
-          <h2 className="text-[55px] leading-[55px] font-bold">
+      <div className=" bg-[#003800] lg:rounded-b-[80px] rounded-b-[40px] pb-20 text-white lg:pt-[280px] pt-[140px] ">
+        <div className="max-container lg:px-16 px-5">
+          <h2 className="lg:text-[55px] lg:leading-[55px] text-[44px] leading-[44px] font-bold">
             Privacy Policy
           </h2>
           <p className="text-[18px] leading-[21px] text-[#999999] mt-5">
@@ -16,7 +16,7 @@ const page = () => {
           </p>
         </div>
       </div>
-      <div className="text-[#1C1D58] px-16 py-20 max-container">
+      <div className="text-[#1C1D58] lg:px-16 px-5 lg:py-20 py-16 max-container">
         <div className="">
           <p className="text-[18px] leading-[21px] mt-0 ">
             At BrandiT Communications, we understand that your privacy is
@@ -180,9 +180,10 @@ const page = () => {
               <span className="mr-1 font-semibold">&#x2022; Opt-Out:</span>
               If you no longer want to receive promotional emails, you can
               unsubscribe directly from the email or let us know via email at
-              <span className="text-blue-600">
+              <span className="text-blue-600 text-wrap">
                 {" "}
-                communication@domaincommunications.com
+                communication <br className="lg:block hidden" />
+                @domaincommunications.com
               </span>
               .
             </p>
@@ -250,23 +251,26 @@ const page = () => {
             <div className="space-y-2">
               <div className="">
                 <a href="mailto:communicate@branditcommunications.com">
-                  <div className="flex items-center space-x-2">
-                    <svg
-                      width="16"
-                      height="16"
-                      viewBox="0 0 16 16"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path d="M0 0H16V16H0V0Z" stroke="#E5E7EB" />
-                      <path
-                        d="M1.5 2C0.671875 2 0 2.67188 0 3.5C0 3.97187 0.221875 4.41562 0.6 4.7L7.4 9.8C7.75625 10.0656 8.24375 10.0656 8.6 9.8L15.4 4.7C15.7781 4.41562 16 3.97187 16 3.5C16 2.67188 15.3281 2 14.5 2H1.5ZM0 5.5V12C0 13.1031 0.896875 14 2 14H14C15.1031 14 16 13.1031 16 12V5.5L9.2 10.6C8.4875 11.1344 7.5125 11.1344 6.8 10.6L0 5.5Z"
-                        fill="#101133"
-                      />
-                    </svg>
+                  <div className="flex lg:items-center  space-x-2">
+                    <div className="mt-1">
+                      <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path d="M0 0H16V16H0V0Z" stroke="#E5E7EB" />
+                        <path
+                          d="M1.5 2C0.671875 2 0 2.67188 0 3.5C0 3.97187 0.221875 4.41562 0.6 4.7L7.4 9.8C7.75625 10.0656 8.24375 10.0656 8.6 9.8L15.4 4.7C15.7781 4.41562 16 3.97187 16 3.5C16 2.67188 15.3281 2 14.5 2H1.5ZM0 5.5V12C0 13.1031 0.896875 14 2 14H14C15.1031 14 16 13.1031 16 12V5.5L9.2 10.6C8.4875 11.1344 7.5125 11.1344 6.8 10.6L0 5.5Z"
+                          fill="#101133"
+                        />
+                      </svg>
+                    </div>
 
-                    <span className="">
-                      communicate@branditcommunications.com
+                    <span className="leading-none">
+                      communicate <br className="lg:block hidden" />{" "}
+                      @branditcommunications.com
                     </span>
                   </div>
                 </a>

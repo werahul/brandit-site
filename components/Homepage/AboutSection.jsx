@@ -48,10 +48,10 @@ const AboutSection = () => {
     }
   }, [isInView]);
   return (
-    <div className=" bg-[#EAEAF4] text-[#1C1D58] rounded-b-[80px]  lg:pt-[184px] lg:pb-[145px]">
-      <div className="max-container px-16 ">
+    <div className=" bg-[#EAEAF4] text-[#1C1D58] lg:rounded-b-[80px] rounded-b-[40px]  lg:pt-[184px] pt-[120px]  pb-[80px] lg:pb-[145px]">
+      <div className="max-container lg:px-16 px-5 ">
         <motion.div
-          className="flex items-center justify-between"
+          className="lg:flex items-center justify-between"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
@@ -65,33 +65,34 @@ const AboutSection = () => {
               className="absolute -top-3 -left-10 w-[543px] object-cover"
             />
             {/* Text Content */}
-            <h2 className="text-h2 text-[#1C1D58] font-bold relative">
-              Where Media Meets <br /> Strategy, Crisis <br /> Sparks
-              Innovation, <br /> and Brands Thrive.
+            <h2 className="lg:text-h2 text-[44px] leading-[44px] lg:leading-[55px] text-[#1C1D58] font-bold relative">
+              Where Media Meets <br className="lg:block hidden" /> Strategy,
+              Crisis <br className="lg:block hidden" /> Sparks Innovation,{" "}
+              <br className="lg:block hidden" /> and Brands Thrive.
             </h2>
           </motion.div>
 
           {/* Right Content */}
           <motion.div
-            className="flex space-x-12 w-[60%] flex-row items-center"
+            className="flex lg:space-x-12 lg:w-[60%] lg:flex-row flex-col  items-center"
             variants={fadeUpVariants}
             custom={0.2}
           >
-            <div className="relative">
+            <div className="relative lg:py-0 py-10">
               <img
                 src="/images/greenRoundMask.svg"
                 alt="green Mask"
-                className="min-w-[226px]"
+                className="lg:min-w-[226px]"
               />
               <div
                 ref={ref}
-                className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 font-semibold text-h1 text-white"
+                className="absolute top-1/2 left-1/2 transform lg:-translate-x-1/2 -translate-x-[50%] -translate-y-1/2 font-semibold lg:text-h1 text-[83px] text-white"
               >
                 {counter}+
               </div>
             </div>
             <div className="text-[18px] leading-[30px] text-[#1C1D58]">
-              <p className="font-bold mb-4">19+ Years of Experience,</p>
+              <p className="font-bold lg:mb-4 pb-2">19+ Years of Experience,</p>
               With over 19 years of experience, we’ve mastered the art of PR,
               delivering results-driven strategies and building long-lasting
               relationships that propel brands forward.
@@ -101,7 +102,7 @@ const AboutSection = () => {
 
         {/* Grid Section */}
         <motion.div
-          className="grid grid-cols-3 space-x-10 mt-[145px]"
+          className="grid lg:grid-cols-3 grid-cols-1 lg:space-x-10 lg:mt-[145px] mt-10"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
@@ -112,7 +113,7 @@ const AboutSection = () => {
 
             return (
               <motion.div
-                className="flex flex-row space-x-[52px] items-center border-t border-[#9a9dafad] pt-[36px]"
+                className="flex flex-row lg:space-x-[52px] space-x-[20px] items-center lg:border-t border-[#9a9dafad] pt-[36px]"
                 variants={fadeUpVariants}
                 custom={0.2 * (index + 1)}
                 key={index}

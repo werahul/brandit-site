@@ -15,23 +15,23 @@ const GridSection = () => {
   };
 
   return (
-    <div className="bg-white text-[#1C1D58] rounded-[80px]  py-20 relative">
+    <div className="bg-white text-[#1C1D58] lg:rounded-[80px] rounded-[40px]  lg:py-20 py-16 relative">
       <img
         src="/images/bgElementcase.png"
         alt="Background Element"
         className="absolute bottom-0 left-0 object-cover rounded-b-[80px]"
       />
       {/* Title and Description Section */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8 px-16  max-container" >
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:gap-8 gap-5 mb-8 lg:px-16 px-5  max-container">
         {/* Title */}
         <motion.h2
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.3 }} // Triggers animation on entering viewport
           variants={fadeUpVariants}
-          className="text-h2 font-regular"
+          className="lg:text-h2 lg:leading-[55px] text-[44px] leading-[44px] font-regular"
         >
-          Lorem ipsum dolor sit amet consectetur.
+          Expert communicators creating impact.
         </motion.h2>
 
         {/* Description */}
@@ -41,81 +41,31 @@ const GridSection = () => {
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
             variants={fadeUpVariants}
-            className="text-[20px] font-semibold"
+            className="lg:text-[20px] text-[18px] font-regular"
           >
-            Lorem ipsum dolor sit amet consectetur.
-          </motion.p>
-          <motion.p
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.3 }}
-            variants={fadeUpVariants}
-            className="text-[20px] font-regular"
-          >
-            Lorem ipsum dolor sit amet consectetur. Ornare turpis ullamcorper
-            nunc dignissim bibendum felis malesuada. Eget consectetur eget est
-            sed vitae mauris magna turpis convallis. Id pellentesque at sed
-            pulvinar libero nisi in.
+            We are a passionate team of communicators, working with clients to
+            deliver results built on trust, transparency, and a shared passion
+            for success.
           </motion.p>
         </div>
       </div>
 
       {/* Grid Section */}
-      <div className="flex space-x-6 relative  max-container px-16">
-        {/* Left Section */}
-        <div>
-          <div className="flex space-x-6">
-            <motion.div
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, amount: 0.3 }}
-              variants={fadeUpVariants}
-              className="bg-gray-200 rounded-[28px] w-[188px] h-[175px]"
-            ></motion.div>
-            <motion.div
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, amount: 0.3 }}
-              variants={fadeUpVariants}
-              className="bg-gray-200 rounded-[28px] w-[295px] h-[175px]"
-            ></motion.div>
-          </div>
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.3 }}
-            variants={fadeUpVariants}
-            className="bg-gray-200 rounded-[28px] w-[506px] h-[236px] mt-6"
-          ></motion.div>
-        </div>
-
-        {/* Right Section */}
-        <div className="flex space-x-6 w-[50%]">
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.3 }}
-            variants={fadeUpVariants}
-            className="bg-gray-200 rounded-[28px] min-w-[370px]"
-          ></motion.div>
-          <div className="flex space-y-6 flex-col">
-            <motion.div
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, amount: 0.3 }}
-              variants={fadeUpVariants}
-              className="bg-gray-200 rounded-[28px] w-[264px] h-[175px]"
-            ></motion.div>
-            <motion.div
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, amount: 0.3 }}
-              variants={fadeUpVariants}
-              className="bg-gray-200 rounded-[28px] w-[264px] h-[210px]"
-            ></motion.div>
-          </div>
-        </div>
+      <div className="lg:flex hidden space-x-6 relative  max-container px-16 lg:py-5">
+        <img
+          src="/images/aboutCollage.png"
+          alt="Background Element"
+          className=""
+        />
       </div>
+
+      <div className="lg:hidden px-5">
+      <img
+        src="/images/aboutCollageMobile.png"
+        alt="Background Element"
+        className=""
+      />
+    </div>
     </div>
   );
 };

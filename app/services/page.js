@@ -26,21 +26,21 @@ const page = () => {
     <div>
       <Navbar />
       <div className="bg-[#002A00] ">
-        <div className=" max-container text-white px-16 pt-[280px] pb-0 flex items-center space-x-40">
+        <div className=" max-container text-white lg:px-16 px-5 lg:pt-[280px] pt-[160px] pb-0 flex items-center lg:space-x-40">
           <div>
             <motion.h1
-              className="text-h1 font-semibold"
+              className="lg:text-h1 text-[55px] lg:leading-[86px] leading-[55px] font-semibold"
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 1, delay: 0.2, ease: "easeInOut" }}
             >
-            Your story; <br />
-            Our strategy
+              Your story; <br />
+              Our strategy
             </motion.h1>
           </div>
         </div>
 
-        <div className="pb-20">
+        <div className="lg:pb-20 pb-16">
           <FeaturedClients images={images} />
         </div>
       </div>
@@ -49,13 +49,13 @@ const page = () => {
         <ServicesListing />
       </div>
 
-      <div className="py-20 bg-[#EAEAF4] rounded-b-[80px]">
-        <div className="px-16 max-container">
+      <div className="lg:py-20 py-16 bg-[#EAEAF4] lg:rounded-b-[80px] rounded-b-[40px]">
+        <div className="lg:px-16 px-5   max-container">
           <CaseStudies />
         </div>
       </div>
       <IndustriesWeServe />
-      <div className="pb-40">
+      <div className="lg:pb-40 pb-20">
         <BlogNews />
       </div>
       <Footer />

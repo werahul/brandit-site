@@ -6,9 +6,9 @@ const page = () => {
   return (
     <div>
       <Navbar />
-      <div className=" bg-[#003800] rounded-b-[80px] pb-20 text-white pt-[280px] ">
-        <div className="max-container px-16">
-          <h2 className="text-[55px] leading-[55px] font-bold">
+      <div className=" bg-[#003800] lg:rounded-b-[80px] rounded-b-[40px] pb-20 text-white lg:pt-[280px] pt-[140px] ">
+        <div className="max-container lg:px-16 px-5">
+          <h2 className="lg:text-[55px] lg:leading-[55px] text-[44px] leading-[44px] font-bold">
             Terms and Conditions
           </h2>
           <p className="text-[18px] leading-[21px] text-[#999999] mt-5">
@@ -16,7 +16,7 @@ const page = () => {
           </p>
         </div>
       </div>
-      <div className="text-[#1C1D58] px-16 py-20 max-container">
+      <div className="text-[#1C1D58] lg:px-16 px-5 lg:py-20 py-16 max-container">
         <div className="">
           <p className="text-[18px] leading-[21px]">
             BrandiT Communications (hereinafter referred to as "BrandiT")
@@ -34,7 +34,7 @@ const page = () => {
         </div>
 
         <div className="mt-10">
-          <h6 className="text-[23px] leading-[27px] font-bold">
+          <h6 className="text-[23px] leading-[27px] lg:font-bold font-semibold">
             1. Acceptance of Terms
           </h6>
           <p className="text-[18px] leading-[21px] mt-3">
@@ -47,7 +47,7 @@ const page = () => {
         </div>
 
         <div className="mt-10">
-          <h6 className="text-[23px] leading-[27px] font-bold">
+          <h6 className="text-[23px] leading-[27px] lg:font-bold font-semibold">
             2. Use and Access of Website Information
           </h6>
           <div className="">
@@ -56,19 +56,19 @@ const page = () => {
               download, and distribute information available on this website
               under the following conditions:
             </p>
-            <p className="text-[18px] leading-[21px] mt-3 font-semibold">
+            <p className="text-[18px] leading-[21px] mt-3 lg:font-semibold">
               <span className="mr-3">&#x2022;</span> The content is used solely
               for personal, informational, or internal business purposes.
             </p>
-            <p className="text-[18px] leading-[21px] mt-3 font-semibold">
+            <p className="text-[18px] leading-[21px] mt-3 lg:font-semibold">
               <span className="mr-3">&#x2022;</span> The information remains
               unmodified and retains its original integrity.
             </p>
-            <p className="text-[18px] leading-[21px] mt-3 font-semibold">
+            <p className="text-[18px] leading-[21px] mt-3 lg:font-semibold">
               <span className="mr-3">&#x2022;</span> Any distributed copies must
               include BrandiT's copyright notice and this permission statement.
             </p>
-            <p className="text-[18px] leading-[21px] mt-3 font-semibold">
+            <p className="text-[18px] leading-[21px] mt-3 lg:font-semibold">
               <span className="mr-3">&#x2022;</span> BrandiT reserves the right
               to revoke these permissions at any time.
             </p>
@@ -82,7 +82,7 @@ const page = () => {
         </div>
 
         <div className="mt-10">
-          <h6 className="text-[23px] leading-[27px] font-bold">
+          <h6 className="text-[23px] leading-[27px] lg:font-bold font-semibold">
             3. Intellectual Property Rights
           </h6>
           <div className="">
@@ -100,7 +100,7 @@ const page = () => {
         </div>
 
         <div className="mt-10">
-          <h6 className="text-[23px] leading-[27px] font-bold">
+          <h6 className="text-[23px] leading-[27px] lg:font-bold font-semibold">
             4. Prohibited Activities
           </h6>
           <div className="">
@@ -108,16 +108,16 @@ const page = () => {
               To ensure a safe and positive experience for all users, we kindly
               request avoiding the following activities:
             </p>
-            <p className="text-[18px] leading-[21px] mt-3 font-semibold">
+            <p className="text-[18px] leading-[21px] mt-3 lg:font-semibold">
               <span className="mr-3">&#x2022;</span> Posting or sharing content
               that is unlawful, offensive, or harmful.
             </p>
-            <p className="text-[18px] leading-[21px] mt-3 font-semibold">
+            <p className="text-[18px] leading-[21px] mt-3 lg:font-semibold">
               <span className="mr-3">&#x2022;</span> Engaging in activities that
               could compromise the security, availability, or performance of the
               website.
             </p>
-            <p className="text-[18px] leading-[21px] mt-3 font-semibold">
+            <p className="text-[18px] leading-[21px] mt-3 lg:font-semibold">
               <span className="mr-3">&#x2022;</span> Attempting to gain
               unauthorized access to the website or its related systems.
             </p>
@@ -130,7 +130,7 @@ const page = () => {
         </div>
 
         <div className="mt-10">
-          <h6 className="text-[23px] leading-[27px] font-bold">
+          <h6 className="text-[23px] leading-[27px] lg:font-bold font-semibold">
             5. Availability of Services
           </h6>
           <div className="">
@@ -144,7 +144,7 @@ const page = () => {
         </div>
 
         <div className="mt-10">
-          <h6 className="text-[23px] leading-[27px] font-bold">
+          <h6 className="text-[23px] leading-[27px] lg:font-bold font-semibold">
             6. Linking Policy
           </h6>
           <div className="">
@@ -157,7 +157,7 @@ const page = () => {
         </div>
 
         <div className="mt-10">
-          <h6 className="text-[23px] leading-[27px] font-bold">
+          <h6 className="text-[23px] leading-[27px] lg:font-bold font-semibold">
             7. Governing Law and Jurisdiction
           </h6>
           <div className="">
@@ -170,7 +170,7 @@ const page = () => {
         </div>
 
         <div className="mt-10">
-          <h6 className="text-[23px] leading-[27px] font-bold">
+          <h6 className="text-[23px] leading-[27px] lg:font-bold font-semibold">
             8. Privacy Policy
           </h6>
           <div className="">
@@ -185,7 +185,7 @@ const page = () => {
         </div>
 
         <div className="mt-10">
-          <h6 className="text-[23px] leading-[27px] font-bold">
+          <h6 className="text-[23px] leading-[27px] lg:font-bold font-semibold">
             9. Amendments
           </h6>
           <div className="">
@@ -197,14 +197,14 @@ const page = () => {
         </div>
 
         <div className="mt-10">
-          <h6 className="text-[23px] leading-[27px] font-bold">
+          <h6 className="text-[23px] leading-[27px] lg:font-bold font-semibold">
             10. Contact Us
           </h6>
           <div className="">
             <p className="text-[18px] leading-[21px] mt-3">
               If you have any questions or concerns regarding these terms, we
               warmly invite you to reach out to us via email at
-              communicate@branditcommunications.com. 
+              communicate <br className="lg:block hidden" />@branditcommunications.com. 
             </p>
           </div>
         </div>

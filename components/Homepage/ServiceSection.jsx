@@ -72,25 +72,27 @@ const ServiceSection = () => {
   ];
 
   return (
-    <div className="text-[#1C1D58] bg-white relative rounded-b-[80px]">
+    <div className="text-[#1C1D58] bg-white relative lg:rounded-b-[80px] rounded-b-[40px]">
       <img
         src="/images/bgElementcase.png"
         alt="Background Element"
-        className="absolute bottom-0 object-cover rounded-b-[80px]"
+        className="absolute bottom-0 object-cover lg:rounded-b-[80px] rounded-b-[40px]"
       />
       <motion.div
-        className="flex space-x-32 maxLeftOnly pl-16 py-[140px] relative"
+        className="lg:flex lg:space-x-32 maxLeftOnly lg:pl-16 lg:py-[140px] py-[80px] relative"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.5 }}
       >
         {/* Left Section */}
         <motion.div
-          className="mb-8 w-[40%]"
+          className="mb-8 lg:w-[40%] px-5 lg:px-0"
           variants={fadeUpVariants}
           custom={0}
         >
-          <h2 className="text-h2 font-bold text-navy-900">What We Deliver</h2>
+          <h2 className="lg:text-h2 text-[44px] leading-[44px] lg:leading-normal font-bold text-navy-900">
+            What We Deliver
+          </h2>
           <p className="mt-4">
             At BrandiT Communications, we craft dynamic, data-driven strategies
             in partnership with our clients. Through transparent insights and
@@ -110,14 +112,14 @@ const ServiceSection = () => {
         </motion.div>
         {/* Right Section */}
         <motion.div
-          className="space-y-0 w-[70%]"
+          className="space-y-0 lg:w-[70%]"
           variants={fadeUpVariants}
           custom={0.2}
         >
           {services.map((service, index) => (
             <motion.div
               key={service.id}
-              className={`relative p-4 rounded-l-lg transition-all duration-300 h-[131px] flex items-center border-t border-[#e2e4ecad] overflow-hidden`}
+              className={`relative p-4 lg:rounded-l-lg transition-all duration-300 h-[131px] flex items-center border-t border-[#e2e4ecad] overflow-hidden`}
               onMouseEnter={() => setHoveredService(service.id)}
               onMouseLeave={() => setHoveredService(null)}
               variants={fadeUpVariants}
@@ -136,10 +138,10 @@ const ServiceSection = () => {
                 }}
               />
 
-              <div className="flex flex-row items-center w-full relative z-10">
-                <div className="flex items-center">
+              <div className="flex flex-row lg:items-center items-start w-full relative z-10">
+                <div className="flex lg:items-center items-start">
                   {/* Icon with Hover Effect */}
-                  <div className="mr-4 relative w-[53px] h-[53px]">
+                  <div className="lg:block hidden mr-4 relative lg:w-[53px] lg:h-[53px] w-[32px] h-[32px]">
                     <Image
                       src={
                         hoveredService === service.id
@@ -149,21 +151,38 @@ const ServiceSection = () => {
                       alt={`${service.title} icon`}
                       width={50}
                       height={50}
-                      className="transition-opacity duration-300"
+                      className={`transition-opacity w-[32px] h-[32px] lg:w-[40px] lg:h-[40px] duration-300 ${service.id === 1 ? "lg:w-[65px] lg:h-[65px] lg:-mt-2" : ""}`}
+
                     />
                   </div>
                 </div>
 
                 <div className="">
-                  <p
-                    className={`text-[36px] ${
-                      hoveredService === service.id
-                        ? "text-white"
-                        : "text-navy-900"
-                    }`}
-                  >
-                    {service.title}
-                  </p>
+                  <div className="flex space-x-4">
+                    <div className="lg:hidden block mr-0 relative w-[32px] h-[32px]">
+                      <Image
+                        src={
+                          hoveredService === service.id
+                            ? service.hoverImg
+                            : service.defaultImg
+                        }
+                        alt={`${service.title} icon`}
+                        width={50}
+                        height={50}
+                        className="transition-opacity w-[32px] h-[32px] duration-300"
+                      />
+                    </div>
+                    <p
+                      className={`lg:text-[36px] text-[23px] ${
+                        hoveredService === service.id
+                          ? "text-white"
+                          : "text-navy-900"
+                      }`}
+                    >
+                      {service.title}
+                    </p>
+                  </div>
+
                   <div
                     className={`flex gap-x-6 transition-opacity duration-300 space-x-8 ${
                       hoveredService === service.id
@@ -172,7 +191,10 @@ const ServiceSection = () => {
                     }`}
                   >
                     {service.subServices.map((subService, index) => (
-                      <span key={index} className="text-sm text-white">
+                      <span
+                        key={index}
+                        className="lg:text-[16px] text-small-text lg:ml-4 lg:mt-0 mt-2 text-white"
+                      >
                         {subService}
                       </span>
                     ))}

@@ -21,6 +21,9 @@ const page = () => {
     "/clientsLogo/6.svg",
     "/clientsLogo/7.svg",
     "/clientsLogo/8.svg",
+    "/clientsLogo/9.svg",
+    "/clientsLogo/10.svg",
+    "/clientsLogo/11.svg",
   ];
   return (
     <div className="">
@@ -29,9 +32,9 @@ const page = () => {
       <div className=" bg-white">
         <AboutSection />
       </div>
-      <div className="bg-[#EAEAF4] rounded-b-[80px]">
+      <div className="bg-[#EAEAF4] lg:rounded-b-[80px] rounded-b-[40px]">
         <ServiceSection />
-        <div className="bg-[#EAEAF4]  rounded-b-[80px] lg:pt-[120px] lg:pb-[80px] px-16 max-container relative overflow-hidden">
+        <div className="bg-[#EAEAF4]  lg:rounded-b-[80px] rounded-b-[40px] lg:pt-[120px] pt-20 pb-[80px] lg:px-16 px-5 max-container relative overflow-hidden">
           <img
             src="/images/bgElementcase.png"
             alt="Background Element"

@@ -6,18 +6,18 @@ import ContactForm from "./ContactForm";
 
 const ContactHero = () => {
   return (
-    <div className="bg-[#002A00] pt-[280px] ">
-      <div className="relative shadow-2xl pb-20 rounded-b-[80px]">
+    <div className="bg-[#002A00] lg:pt-[280px] pt-[140px] ">
+      <div className="relative shadow-2xl pb-20 lg:rounded-b-[80px] rounded-b-[40px] ">
         <img
           src="/images/bgElementcase.png"
           alt="Background Element"
-          className="absolute bottom-0 object-cover rounded-b-[80px]"
+          className="absolute bottom-0 object-cover lg:rounded-b-[80px] rounded-b-[40px]"
         />
-        <div className=" max-container flex  px-16 gap-x-4 relative">
-          <div className=" text-[#ECFBE6]  pb-40 flex flex-col w-[50%]">
+        <div className=" max-container lg:flex  lg:px-16 px-5 lg:gap-x-4 relative lg:h-auto h-[1400px]">
+          <div className=" text-[#ECFBE6]  lg:pb-40 pb-20 flex flex-col lg:w-[50%] ">
             <div>
               <motion.h1
-                className="text-h1 font-semibold"
+                className="lg:text-h1 text-[55px] lg:leading-[86px] leading-[55px] font-semibold"
                 initial={{ opacity: 0, x: -50 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 1, delay: 0.2, ease: "easeInOut" }}
@@ -25,7 +25,7 @@ const ContactHero = () => {
                 Let's Connect
               </motion.h1>
 
-              <p className="text-[24px] leading-[28px] font-regular text-[#D2D1D1] mt-3">
+              <p className="lg:text-[24px] text-[20px] lg:leading-[28px] leading-[24px] font-regular text-[#D2D1D1] mt-3">
                 Have a story to tell? <br />
                 Reach out to us and make your brand stand out.
               </p>
@@ -52,8 +52,8 @@ const ContactHero = () => {
                   </div>
                   <div>
                     <a href="mailto:communicate@branditcommunications.com">
-                      <p className="text-[24px]  font-bold mt-1 group-hover:text-[#45D400]">
-                      communicate@branditcommunications.com
+                      <p className="lg:text-[24px] text-[19.5px]  font-bold mt-1 group-hover:text-[#45D400]">
+                      communicate <br className="lg:hidden"/> @branditcommunications.com
                       </p>
                     </a>
                   </div>
@@ -82,7 +82,7 @@ const ContactHero = () => {
                       rel="noopener noreferrer"
                     >
                      
-                      <p className="text-[24px] text-[#1C1D58] font-bold mt-1 group-hover:text-[#45D400]">
+                      <p className="lg:text-[24px] text-[19.5px] text-[#1C1D58] font-bold mt-1 group-hover:text-[#45D400]">
                         9632299872
                       </p>
                     </a>
@@ -92,7 +92,7 @@ const ContactHero = () => {
             </motion.div>
           </div>
 
-          <div className="w-[50%] rounded-[20px]">
+          <div className="lg:w-[50%] rounded-[20px]">
             <ContactForm />
           </div>
         </div>

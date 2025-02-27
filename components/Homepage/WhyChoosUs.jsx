@@ -66,7 +66,7 @@ const WhyChooseUs = () => {
   };
 
   return (
-    <div className="pt-[120px] text-[#1C1D58]">
+    <div className="lg:pt-[120px] pt-[80px] text-[#1C1D58]">
       <div className="">
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Left side content */}
@@ -76,7 +76,7 @@ const WhyChooseUs = () => {
             whileInView="visible"
             viewport={{ once: true, amount: 0.2 }}
           >
-            <h2 className="text-h2 font-bold mb-6">
+            <h2 className="lg:text-h2 text-[44px] leading-[44px] lg:leading-[55px] font-bold  mb-6">
               Why We Are The Right Choice For You
             </h2>
             <p className="text-[18px] leading-[30px]">
@@ -87,7 +87,7 @@ const WhyChooseUs = () => {
 
           {/* Right side stats */}
           <motion.div
-            className="grid grid-cols-2"
+            className="grid lg:grid-cols-2 grid-cols-1"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.2 }}
@@ -105,18 +105,18 @@ const WhyChooseUs = () => {
               <motion.div
                 key={index}
                 variants={containerVariants}
-                className={`text-center lg:text-left py-10 px-7 border-[#B3B3B380] ${
+                className={`text-center lg:text-left lg:py-10 py-6 px-7 border-[#B3B3B380] ${
                   index === 0
-                    ? "border-l border-b"
+                    ? "border-l border-b lg:border-r-0 border-r"
                     : index === 1
                     ? "border-l border-r border-b"
                     : index === 2
-                    ? "border-l"
+                    ? "border-l border-b lg:border-b-0 lg:border-r-0 border-r "
                     : "border-l border-r"
                 }`}
               >
                 <p className="text-[18px] leading-[21px]">{stat.description}</p>
-                <div className="text-[56px] mt-[35px] mb-2">
+                <div className="text-[56px] lg:mt-[35px] mt-5 mb-2">
                   <Counter value={stat.number} />
                 </div>
               </motion.div>

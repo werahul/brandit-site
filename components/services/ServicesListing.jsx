@@ -2,27 +2,27 @@ import React from "react";
 
 const ServicesListing = () => {
   return (
-    <div className="bg-white py-20 rounded-[80px]">
-      <div className="text-[#1C1D58]  px-16 max-container ">
-        <div className="flex flex-row items-center pb-32">
-          <div className="w-1/2">
-            <h2 className="text-h2 leading-[55px]">
+    <div className="bg-white lg:py-20 py-16 lg:rounded-[80px] rounded-[40px]">
+      <div className="text-[#1C1D58]  lg:px-16 px-5 max-container ">
+        <div className="lg:flex flex-row items-center lg:pb-32 pb-20">
+          <div className="lg:w-1/2">
+            <h2 className="lg:text-h2 text-[44px] lg:leading-[55px] leading-[44px]">
               Unmatched PR for Unstoppable Growth
             </h2>
           </div>
-          <div className="w-1/2">
+          <div className="lg:w-1/2 lg:mt-0 mt-6">
             <p className="text-[23px] leading-[27px]">
               We turn your brand's message into news everyone wants to share.
             </p>
           </div>
         </div>
 
-        <div className="flex flex-row items-center gap-x-[100px]">
-          <div className="w-1/2">
-            <h2 className="text-h2 leading-[55px] font-bold">
+        <div className="flex lg:flex-row flex-col-reverse items-center gap-x-[100px]">
+          <div className="lg:w-1/2">
+            <h2 className="lg:text-h2 text-[35px] lg:leading-[55px] leading-[35px] lg:font-bold font-semibold">
               Brand Storytelling
             </h2>
-            <p className="text-[23px] leading-[32px] py-8">
+            <p className="text-[23px] leading-[32px] lg:py-8 py-5">
               Brand storytelling is a marketing technique that goes beyond
               traditional advertising to build a deeper connection with the
               audience. It uses narratives to convey a brand's values, mission,
@@ -30,7 +30,7 @@ const ServicesListing = () => {
               fostering engagement and loyalty.
             </p>
 
-            <ul className="text-[18px] font-bold list-disc ml-5 space-y-1">
+            <ul className="text-[18px] lg:font-bold font-semibold list-disc ml-5 space-y-1">
               <li>Authenticity</li>
               <li>Relatability</li>
               <li>Compelling Narrative</li>
@@ -38,16 +38,16 @@ const ServicesListing = () => {
               <li>Clear Message</li>
             </ul>
           </div>
-          <div className="w-1/2">
-            <div className="bg-[#D9D9D9] w-full h-[600px] rounded-tr-[109px] rounded-br-[2px] rounded-tl-[2px] rounded-bl-[2px] "></div>
+          <div className="lg:w-1/2 lg:mb-0 mb-10">
+            <img src="/images/serv1.png" alt="" />
           </div>
         </div>
-        <div className="flex flex-row-reverse items-center gap-x-[100px] mt-20">
-          <div className="w-1/2">
-            <h2 className="text-h2 leading-[55px] font-bold">
+        <div className="flex lg:flex-row-reverse flex-col-reverse items-center gap-x-[100px] mt-20">
+          <div className="lg:w-1/2">
+            <h2 className="lg:text-h2 text-[35px] lg:leading-[55px] leading-[35px] lg:font-bold font-semibold">
               Public Relations{" "}
             </h2>
-            <p className="text-[23px] leading-[32px] py-8">
+            <p className="text-[23px] leading-[32px] lg:py-8 py-5">
               We build and maintain strong relationships between brands and
               their target audience through strategic communication. This
               includes media relations, crisis communication, social media
@@ -56,7 +56,7 @@ const ServicesListing = () => {
               visibility.
             </p>
 
-            <ul className="text-[18px] font-bold list-disc ml-5 space-y-1">
+            <ul className="text-[18px] lg:font-bold font-semibold list-disc ml-5 space-y-1">
               <li>Media Relations</li>
               <li>Crisis Communication</li>
               <li>Social Media Management</li>
@@ -64,16 +64,16 @@ const ServicesListing = () => {
               <li>Reputation Management</li>
             </ul>
           </div>
-          <div className="w-1/2">
-            <div className="bg-[#D9D9D9] w-full h-[600px] rounded-tr-[2px] rounded-br-[2px] rounded-tl-[109px] rounded-bl-[2px] "></div>
+          <div className="lg:w-1/2 lg:mb-0 mb-10">
+            <img src="/images/serv2.png" alt="" />
           </div>
         </div>
-        <div className="flex flex-row items-center gap-x-[100px] mt-20">
-          <div className="w-1/2">
-            <h2 className="text-h2 leading-[55px] font-bold">
+        <div className="flex lg:flex-row flex-col-reverse items-center gap-x-[100px] mt-20">
+          <div className="lg:w-1/2">
+            <h2 className="lg:text-h2 text-[35px] lg:leading-[55px] leading-[35px] lg:font-bold font-semibold">
               Influencer Marketing{" "}
             </h2>
-            <p className="text-[23px] leading-[32px] py-8">
+            <p className="text-[23px] leading-[32px] lg:py-8 py-5">
               We identify and collaborate with influential individuals to
               promote brands to their respective target audiences. This involves
               establishing strategic partnerships, planning impactful campaigns,
@@ -81,7 +81,7 @@ const ServicesListing = () => {
               tracking performance to ensure successful outcomes.
             </p>
 
-            <ul className="text-[18px] font-bold list-disc ml-5 space-y-1">
+            <ul className="text-[18px] lg:font-bold font-semibold list-disc ml-5 space-y-1">
               <li>Strategic Partnerships</li>
               <li>Content Co-Creation </li>
               <li>Campaign Optimization </li>
@@ -89,16 +89,16 @@ const ServicesListing = () => {
               <li>Audience Analysis </li>
             </ul>
           </div>
-          <div className="w-1/2">
-            <div className="bg-[#D9D9D9] w-full h-[600px] rounded-tr-[109px] rounded-br-[2px] rounded-tl-[2px] rounded-bl-[2px] "></div>
+          <div className="lg:w-1/2 lg:mb-0 mb-10">
+            <img src="/images/serv3.png" alt="" />
           </div>
         </div>
-        <div className="flex flex-row-reverse items-center gap-x-[100px] mt-20">
-          <div className="w-1/2">
-            <h2 className="text-h2 leading-[55px] font-bold">
+        <div className="flex lg:flex-row-reverse flex-col-reverse items-center gap-x-[100px] mt-20">
+          <div className="lg:w-1/2">
+            <h2 className="lg:text-h2 text-[35px] lg:leading-[55px] leading-[35px] lg:font-bold font-semibold">
               Brand Strategy Consulting{" "}
             </h2>
-            <p className="text-[23px] leading-[32px] py-8">
+            <p className="text-[23px] leading-[32px] lg:py-8 py-5">
               We help businesses define their unique brand identity by
               uncovering core values, vision, and mission. We craft compelling
               brand stories that connect with audiences and create targeted
@@ -106,7 +106,7 @@ const ServicesListing = () => {
               loyalty, and drives business growth.
             </p>
 
-            <ul className="text-[18px] font-bold list-disc ml-5 space-y-1">
+            <ul className="text-[18px] lg:font-bold font-semibold list-disc ml-5 space-y-1">
               <li>Brand Positioning </li>
               <li>Brand Performance Measurement </li>
               <li>Brand Discovery </li>
@@ -114,17 +114,16 @@ const ServicesListing = () => {
               <li>Go to Market Strategy </li>
             </ul>
           </div>
-          <div className="w-1/2">
-            <div className="bg-[#D9D9D9] w-full h-[600px] rounded-tr-[2px] rounded-br-[2px] rounded-tl-[109px] rounded-bl-[2px]  "></div>
+          <div className="lg:w-1/2 lg:mb-0 mb-10">
+            <img src="/images/serv4.png" alt="" />
           </div>
         </div>
-
-        <div className="flex flex-row items-center gap-x-[100px] mt-20">
-          <div className="w-1/2">
-            <h2 className="text-h2 leading-[55px] font-bold">
+        <div className="flex lg:flex-row flex-col-reverse items-center gap-x-[100px] mt-20">
+          <div className="lg:w-1/2">
+            <h2 className="lg:text-h2 text-[35px] lg:leading-[55px] leading-[35px] lg:font-bold font-semibold">
               Guestlist Curation
             </h2>
-            <p className="text-[23px] leading-[32px] py-8">
+            <p className="text-[23px] leading-[32px] lg:py-8 py-5">
               We strategically select and invite an exclusive group of guests to
               enhance event quality and impact. By prioritizing target
               audiences, analyzing event goals, and leveraging data, we curate
@@ -132,7 +131,7 @@ const ServicesListing = () => {
               connections, and maximize engagement.
             </p>
 
-            <ul className="text-[18px] font-bold list-disc ml-5 space-y-1">
+            <ul className="text-[18px] lg:font-bold font-semibold list-disc ml-5 space-y-1">
               <li>Targeted Invitations</li>
               <li>Networking Facilitation </li>
               <li>Event Segmentation </li>
@@ -140,8 +139,8 @@ const ServicesListing = () => {
               <li>Onsite assistance</li>
             </ul>
           </div>
-          <div className="w-1/2">
-            <div className="bg-[#D9D9D9] w-full h-[600px] rounded-tr-[109px] rounded-br-[2px] rounded-tl-[2px] rounded-bl-[2px] "></div>
+          <div className="lg:w-1/2 lg:mb-0 mb-10">
+            <img src="/images/serv5.png" alt="" />
           </div>
         </div>
       </div>
