@@ -20,8 +20,8 @@ const AboutHero = () => {
         </div>
 
         <motion.div className="space-y-4 lg:mt-0 mt-8">
-          <img src="/images/awardAbout.png" alt="award about" />
-          <img src="/images/awardAbout.png" alt="award about" />
+          <img src="/images/awd1.png" alt="award about" />
+          <img src="/images/awd2.png" alt="award about" />
         </motion.div>
       </div>
     </div>
