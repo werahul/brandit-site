@@ -25,14 +25,14 @@ const page = () => {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 1, delay: 0.2, ease: "easeInOut" }}
             >
-              Influencer Marketing’s <br /> Role in PR Campaigns
+            Why your brand needs <br /> strategy to thrive in the <br /> market
             </motion.h1>
             <div className="flex items-center space-x-5 mt-5">
-              <p>Influencer Marketing</p>
-              <p>Lorem Ipsum</p>
+              <p>Brand Strategy Consulting</p>
+              <p>Mar 03, 2025</p>
             </div>
             <div className="cta mt-6">
-              <Link href="/blogs/influencer-marketings-role-in-pr-campaigns" className="">
+              <Link href="/blogs/why-your-brand-needs-strategy-to-thrive-in-the-market" className="">
                 <button className="relative w-[130px] h-[56px] bg-gradient-to-r border-[1.5px] border-[#45D400] text-[#45D400] text-[16px] rounded-[40px] overflow-hidden group">
                   <span className="absolute inset-0 bg-gradient-to-r from-[#45D400] via-[#36BA00] to-[#005E00] transition-transform scale-0 group-hover:scale-100 group-hover:rotate-180 duration-500 ease-in-out rounded-[40px]"></span>
                   <span className="relative z-10 block text-center group-hover:text-white transition-transform duration-300 ease-in-out group-hover:scale-110">

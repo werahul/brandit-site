@@ -11,24 +11,27 @@ const page = () => {
   const blogsData = [
     {
       id: 1,
+      dates: "Jan 02, 2025",
       title: "Influencer Marketing’s Role in PR Campaigns",
       service: "Influencer Marketing",
       image: "/blogsImg/blog1.png",
-      path: "/blogs/influencer-marketings-role-in-pr-campaigns",
+      path: "/blogs/influencer-marketings-role-in-pr-campaigns ",
     },
     {
       id: 2,
+      dates: "Jan 13, 2025",
       title: "PR vs Advertising: Why earned media wins",
       service: "Public Relations",
       image: "/blogsImg/blog2.png",
-      path: "/blogs/pr-vs-advertising-why-earned-media-wins",
+      path: "/blogs/pr-vs-advertising-why-earned-media-wins ",
     },
     {
       id: 3,
+      dates: "Jan 25, 2025",
       title: "The power of storytelling in PR",
       service: "Brand Storytelling",
       image: "/blogsImg/blog3.png",
-      path: "/blogs/the-power-of-storytelling-in-pr",
+      path: "/blogs/the-power-of-storytelling-in-pr ",
     },
   ];
 

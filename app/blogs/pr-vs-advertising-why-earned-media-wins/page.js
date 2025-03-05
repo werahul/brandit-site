@@ -10,6 +10,7 @@ const page = () => {
   const blogsData = [
     {
       id: 1,
+      dates: "Feb 05, 2025",
       title: "The psychology behind VIP guestlist curation",
       service: "Guestlist Curation",
       image: "/blogsImg/blog4.png",
@@ -17,6 +18,7 @@ const page = () => {
     },
     {
       id: 2,
+      dates: "Feb 18, 2025",
       title: "How storytelling supercharges your brand connections",
       service: "Brand Storytelling",
       image: "/blogsImg/blog5.png",
@@ -24,6 +26,7 @@ const page = () => {
     },
     {
       id: 3,
+      dates: "Mar 03, 2025",
       title: "Why your brand needs strategy to thrive in the market",
       service: "Brand Strategy Consulting",
       image: "/blogsImg/blog6.png",
@@ -55,7 +58,7 @@ const page = () => {
                   • <span className="mr-2">Public Relations </span> •
                   <span className="ml-1 mr-3">5 min read</span>{" "}
                   <br className="lg:hidden" /> •
-                  <span className="ml-1">March 15, 2025</span>
+                  <span className="ml-1">Jan 13, 2025</span>
                 </div>
                 <h1 className="lg:text-h2 text-[44px] lg:leading-[55px] leading-[44px] font-bold">
                   PR vs Advertising: Why earned media wins

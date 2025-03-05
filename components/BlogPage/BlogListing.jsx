@@ -5,6 +5,7 @@ const BlogListing = () => {
   const blogs = [
     {
       id: 1,
+      dates: "Jan 02, 2025",
       title: "Influencer Marketing’s Role in PR Campaigns",
       service: "Influencer Marketing",
       image: "/blogsImg/blog1.png",
@@ -12,6 +13,7 @@ const BlogListing = () => {
     },
     {
       id: 2,
+      dates: "Jan 13, 2025",
       title: "PR vs Advertising: Why earned media wins",
       service: "Public Relations",
       image: "/blogsImg/blog2.png",
@@ -19,6 +21,7 @@ const BlogListing = () => {
     },
     {
       id: 3,
+      dates: "Jan 25, 2025",
       title: "The power of storytelling in PR",
       service: "Brand Storytelling",
       image: "/blogsImg/blog3.png",
@@ -26,6 +29,7 @@ const BlogListing = () => {
     },
     {
       id: 4,
+      dates: "Feb 05, 2025",
       title: "The psychology behind VIP guestlist curation",
       service: "Guestlist Curation",
       image: "/blogsImg/blog4.png",
@@ -33,6 +37,7 @@ const BlogListing = () => {
     },
     {
       id: 5,
+      dates: "Feb 18, 2025",
       title: "How storytelling supercharges your brand connections",
       service: "Brand Storytelling",
       image: "/blogsImg/blog5.png",
@@ -40,12 +45,17 @@ const BlogListing = () => {
     },
     {
       id: 6,
+      dates: "Mar 03, 2025",
       title: "Why your brand needs strategy to thrive in the market",
       service: "Brand Strategy Consulting",
       image: "/blogsImg/blog6.png",
       path: "/blogs/why-your-brand-needs-strategy-to-thrive-in-the-market ",
     },
   ];
+
+  const sortedBlogs = [...blogs].sort(
+    (a, b) => new Date(b.dates) - new Date(a.dates)
+  );
 
   const itemsPerPage = 6;
   const [currentPage, setCurrentPage] = useState(1);
@@ -66,11 +76,13 @@ const BlogListing = () => {
     <div className="bg-white text-[#1C1D58] lg:rounded-[80px] rounded-[40px] lg:py-[120px] py-16 px-0">
       <div className="max-container lg:px-16 px-5">
         <div className="grid lg:grid-cols-3 gap-6">
-          {currentBlogs.map((blog, index) => (
+          {sortedBlogs.map((blog, index) => (
             <Link href={blog.path}>
               <div
                 key={blog.id}
-                className={`relative rounded-lg overflow-hidden cursor-pointer group h-[397px] transition-all duration-300`}
+                className={`relative rounded-lg overflow-hidden cursor-pointer group h-[397px] transition-all duration-300 ${
+                  index >= 3 ? "hidden lg:block" : ""
+                }`}
               >
                 {/* Overlay */}
                 <div className="absolute inset-0 bg-[#D9E7D9] transition-opacity duration-300 group-hover:opacity-0"></div>
@@ -82,7 +94,7 @@ const BlogListing = () => {
                 <img
                   src={blog.image}
                   alt={blog.title}
-                  className="w-full h-full object-cover scale-105 opacity-0 transition-all duration-300 group-hover:opacity-100 group-hover:scale-100"
+                  className="w-full h-full object-cover scale-105 transition-all duration-300  group-hover:scale-100"
                 />
 
                 {/* Service Tag */}
@@ -92,7 +104,10 @@ const BlogListing = () => {
 
                 {/* Content */}
                 <div className="p-6 absolute bottom-0 left-0 w-full">
-                  <h3 className="text-[20px] lg:text-[24px] leading-[28px] transition-colors duration-300 group-hover:text-white">
+                  <h3 className="text-[14px] leading-[20px] text-white mb-2">
+                    {blog.dates}
+                  </h3>
+                  <h3 className="text-[20px] lg:text-[24px] leading-[28px] text-white w-[87%]">
                     {blog.title}
                   </h3>
                 </div>

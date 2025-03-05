@@ -11,24 +11,27 @@ const page = () => {
   const blogsData = [
     {
       id: 1,
+      dates: "Jan 02, 2025",
       title: "Influencer Marketing’s Role in PR Campaigns",
       service: "Influencer Marketing",
       image: "/blogsImg/blog1.png",
-      path: "/blogs/influencer-marketings-role-in-pr-campaigns",
+      path: "/blogs/influencer-marketings-role-in-pr-campaigns ",
     },
     {
       id: 2,
+      dates: "Jan 13, 2025",
       title: "PR vs Advertising: Why earned media wins",
       service: "Public Relations",
       image: "/blogsImg/blog2.png",
-      path: "/blogs/pr-vs-advertising-why-earned-media-wins",
+      path: "/blogs/pr-vs-advertising-why-earned-media-wins ",
     },
     {
       id: 3,
+      dates: "Jan 25, 2025",
       title: "The power of storytelling in PR",
       service: "Brand Storytelling",
       image: "/blogsImg/blog3.png",
-      path: "/blogs/the-power-of-storytelling-in-pr",
+      path: "/blogs/the-power-of-storytelling-in-pr ",
     },
   ];
 
@@ -57,7 +60,7 @@ const page = () => {
                   • <span className="mr-2">Guestlist Curation </span> •
                   <span className="ml-1 mr-3">5 min read</span>{" "}
                   <br className="lg:hidden" /> •
-                  <span className="ml-1">March 15, 2025</span>
+                  <span className="ml-1">Feb 05, 2025</span>
                 </div>
                 <h1 className="lg:text-h2 text-[44px] lg:leading-[55px] leading-[44px] font-bold">
                   The Psychology behind VIP guestlist curation

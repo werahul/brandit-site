@@ -2,6 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const IndustriesWeServe = () => {
   const industries = [
@@ -92,12 +93,18 @@ const IndustriesWeServe = () => {
       variants={containerVariants}
     >
       <div className="text-[#1C1D58] max-container lg:px-16 px-5 lg:py-[120px] py-20">
-        <motion.h2
-          className="lg:text-h2 text-[44px] leading-[44px] lg:leading-[55px] font-bold mb-9"
-          variants={itemVariants}
-        >
-          Industries We Serve
-        </motion.h2>
+        <div className="flex lg:flex-row flex-col lg:items-center lg:justify-between mb-9">
+          <motion.h2
+            className="lg:text-h2 text-[44px] leading-[44px] lg:leading-[55px] font-bold "
+            variants={itemVariants}
+          >
+            Industries We Serve
+          </motion.h2>
+
+          <Link href="/industries" className="hover:underline lg:mt-0 mt-2">
+            Know More
+          </Link>
+        </div>
 
         <motion.div
           className="lg:grid flex lg:overflow-hidden overflow-x-scroll grid-cols-5 gap-6"

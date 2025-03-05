@@ -16,8 +16,9 @@ const OtherBlogs = ({ blogs }) => {
 
         <div className="grid lg:grid-cols-3 gap-6">
           {blogs.map((blog, index) => (
-            <Link key={blog.id} href={blog.path}>
+            <Link href={blog.path}>
               <div
+                key={blog.id}
                 className={`relative rounded-lg overflow-hidden cursor-pointer group h-[397px] transition-all duration-300 ${
                   index >= 3 ? "hidden lg:block" : ""
                 }`}
@@ -32,7 +33,7 @@ const OtherBlogs = ({ blogs }) => {
                 <img
                   src={blog.image}
                   alt={blog.title}
-                  className="w-full h-full object-cover scale-105 opacity-0 transition-all duration-300 group-hover:opacity-100 group-hover:scale-100"
+                  className="w-full h-full object-cover scale-105 transition-all duration-300  group-hover:scale-100"
                 />
 
                 {/* Service Tag */}
@@ -42,7 +43,10 @@ const OtherBlogs = ({ blogs }) => {
 
                 {/* Content */}
                 <div className="p-6 absolute bottom-0 left-0 w-full">
-                  <h3 className="text-[20px] lg:text-[24px] leading-[28px] transition-colors duration-300 group-hover:text-white">
+                  <h3 className="text-[14px] leading-[20px] text-white mb-2">
+                    {blog.dates}
+                  </h3>
+                  <h3 className="text-[20px] lg:text-[24px] leading-[28px] text-white w-[87%]">
                     {blog.title}
                   </h3>
                 </div>
