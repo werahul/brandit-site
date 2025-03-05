@@ -17,7 +17,7 @@ const page = () => {
           <div className="max-container lg:pl-16 pl-5">
             <h1 className="lg:text-h1 text-[55px] lg:leading-[86px] leading-[55px] font-semibold">
               {" "}
-              Embrace Creativity, <br /> Drive PR Excellence
+              Embrace Creativity, <br /> Drive PR Excellence.
             </h1>
             <p className="lg:text-[23px] lg:leading-[27px] text-[18px] leading-[21px] lg:mt-2 mt-3">
               We believe that creativity and collaboration drive success, <br className="lg:block hidden" />{" "}

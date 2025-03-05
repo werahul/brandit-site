@@ -35,7 +35,7 @@ const page = () => {
               transition={{ duration: 1, delay: 0.2, ease: "easeInOut" }}
             >
               Your story; <br />
-              Our strategy
+              Our strategy.
             </motion.h1>
           </div>
         </div>

@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 const IndustriesWeServe = () => {
   const industries = [
     {
-      name: "B2B",
+      name: "Travel & Tourism",
       image: "/images/in1.png",
       bgColor: "bg-gray-200",
     },
@@ -21,37 +21,40 @@ const IndustriesWeServe = () => {
       bgColor: "bg-green-100",
     },
     {
-      name: "District Cooling",
+      name: "Auto",
       image: "/images/in4.png",
       bgColor: "bg-yellow-100",
     },
     {
-      name: "Biofuels",
+      name: "Luxury",
       image: "/images/in5.png",
       bgColor: "bg-black",
-    },
-    {
-      name: "Auto",
-      image: "/images/in6.png",
-      bgColor: "bg-cream-100",
-    },
-    {
-      name: "Luxury",
-      image: "/images/in7.png",
-      bgColor: "bg-cream-100",
     },
     {
       name: "Fashion",
       image: "/images/in8.png",
       bgColor: "bg-cream-100",
     },
+
     {
       name: "Hospitality",
       image: "/images/in9.png",
       bgColor: "bg-cream-100",
     },
+
     {
-      name: "EV",
+      name: "Incubation Arms",
+      image: "/images/in6.png",
+      bgColor: "bg-cream-100",
+    },
+    {
+      name: "Entertainment",
+      image: "/images/in7.png",
+      bgColor: "bg-cream-100",
+    },
+
+    {
+      name: "Edtech",
       image: "/images/in10.png",
       bgColor: "bg-cream-100",
     },

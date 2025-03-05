@@ -165,7 +165,7 @@ const page = () => {
                       <strong> Leveraging the First-Mover Advantage: </strong>{" "}
                       We capitalized on Buyofuel’s unique position as India’s
                       only waste-to-biofuel marketplace, shaping the future of
-                      waste management and biofuel production in India
+                      waste management and biofuel production in India.
                     </li>
                   </ul>
                 </p>

@@ -46,7 +46,7 @@ const page = () => {
           </div>
         </div>
       </div>
-      <FeaturedClients images={images} title="Featured Clients/Brands" />
+      <FeaturedClients images={images} title="Featured Clients" />
 
       <IndustriesWeServe />
       <BlogNews />

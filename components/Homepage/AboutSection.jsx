@@ -68,7 +68,7 @@ const AboutSection = () => {
             <h2 className="lg:text-h2 text-[44px] leading-[44px] lg:leading-[55px] text-[#1C1D58] font-bold relative">
               Where Media Meets <br className="lg:block hidden" /> Strategy,
               Crisis <br className="lg:block hidden" /> Sparks Innovation,{" "}
-              <br className="lg:block hidden" /> and Brands Thrive.
+              <br className="lg:block hidden" /> And Brands Thrive.
             </h2>
           </motion.div>
 
@@ -92,7 +92,7 @@ const AboutSection = () => {
               </div>
             </div>
             <div className="text-[18px] leading-[30px] text-[#1C1D58]">
-              <p className="font-bold lg:mb-4 pb-2">19+ Years of Experience,</p>
+              <p className="font-bold lg:mb-4 pb-2">19+ Years of Experience</p>
               With over 19 years of experience, we’ve mastered the art of PR,
               delivering results-driven strategies and building long-lasting
               relationships that propel brands forward.

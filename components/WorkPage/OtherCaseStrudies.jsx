@@ -41,7 +41,7 @@ const OtherCaseStrudies = ({ caseStudies }) => {
               />
 
               {/* Hover Overlay */}
-              <div className="absolute inset-0 bg-green-gradient opacity-0 group-hover:opacity-70 transition-opacity duration-300"></div>
+              <div className="absolute inset-0 bg-black-gradient opacity-0 group-hover:opacity-70 transition-opacity duration-300"></div>
 
               {/* Logo & Name Tag */}
               <div className="absolute bottom-[18px] w-full flex flex-col items-center text-white opacity-100">

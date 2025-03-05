@@ -140,8 +140,7 @@ const page = () => {
                       benefits of district cooling, leveraging strategic
                       partnerships, and showcasing successful project
                       implementations. <br />
-                      Press Release and News articles around Strategic
-                      Partnerships, Workshops
+                      Create Press Release and News Articles around Strategic Partnerships, Workshops.
                     </li>
                     <li>
                       <strong>Thought Leadership Articles: </strong> Articles in

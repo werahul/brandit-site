@@ -34,6 +34,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         'green-gradient': 'linear-gradient(to right, #45D400, #36BA00, #005E00)',
+        'black-gradient': 'linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8))',
       },
     },
   },

@@ -20,7 +20,7 @@ const page = () => {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 1, delay: 0.2, ease: "easeInOut" }}
             >
-              Bringing brands to life with stories that engage <br className="lg:hidden block" /> & endure
+              Bringing brands to life with stories that engage <br className="lg:hidden block" />& endure.
             </motion.h1>
           </div>
         </div>

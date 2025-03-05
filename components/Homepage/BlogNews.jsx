@@ -76,7 +76,7 @@ const BlogNews = () => {
                 <img
                   src={blog.image}
                   alt={blog.title}
-                  className="w-full h-full object-cover scale-105 opacity-0 transition-all duration-300 group-hover:opacity-100 group-hover:scale-100"
+                  className="w-full h-full object-cover scale-105 transition-all duration-300  group-hover:scale-100"
                 />
 
                 {/* Service Tag */}
@@ -86,7 +86,7 @@ const BlogNews = () => {
 
                 {/* Content */}
                 <div className="p-6 absolute bottom-0 left-0 w-full">
-                  <h3 className="text-[20px] lg:text-[24px] leading-[28px] transition-colors duration-300 group-hover:text-white">
+                  <h3 className="text-[20px] lg:text-[24px] leading-[28px] text-white w-[87%]">
                     {blog.title}
                   </h3>
                 </div>

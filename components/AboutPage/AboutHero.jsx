@@ -15,7 +15,7 @@ const AboutHero = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1, delay: 0.2, ease: "easeInOut" }}
           >
-            We amplify your story giving it a voice that resonates
+          We amplify your story, giving it a voice that resonates.
           </motion.h1>
         </div>
 

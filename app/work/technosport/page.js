@@ -170,10 +170,7 @@ const page = () => {
                       people could trust.
                     </li>
                     <li>
-                      <strong> Capitalizing on Key Events: </strong> We
-                      leveraged the Cricket World Cup with a fun, relatable
-                      campaign— “Is World Cup Ko Har Maidaan Mein Khelo”—that
-                      connected TechnoSport’s activewear to India’s passion for
+                      <strong> Capitalizing on Key Events: </strong> We leveraged the Cricket World Cup with a fun, relatable campaign— “Is World Cup Ko Har Maidaan Mein Khelo”—that connected TechnoSport’s activewear to India’s passion for cricket.
                       cric
                     </li>
                   </ul>

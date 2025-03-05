@@ -186,7 +186,7 @@ const page = () => {
                     </li>
                     <li>
                       <strong>Increased Engagement:</strong> A clearer value
-                      proposition attracted more startups seeking support
+                      proposition attracted more startups seeking support.
                     </li>
                   </ul>
                 </p>
