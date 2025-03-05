@@ -76,7 +76,7 @@ const ServiceSection = () => {
       <img
         src="/images/bgElementcase.png"
         alt="Background Element"
-        className="absolute bottom-0 object-cover lg:rounded-b-[80px] rounded-b-[40px]"
+        className="absolute bottom-0 object-cover lg:rounded-b-[80px] rounded-b-[40px] w-full"
       />
       <motion.div
         className="lg:flex lg:space-x-32 maxLeftOnly lg:pl-16 lg:py-[140px] py-[80px] relative"
@@ -151,7 +151,7 @@ const ServiceSection = () => {
                       alt={`${service.title} icon`}
                       width={50}
                       height={50}
-                      className={`transition-opacity w-[32px] h-[32px] lg:w-[40px] lg:h-[40px] duration-300 ${service.id === 1 ? "lg:w-[65px] lg:h-[65px] lg:-mt-2" : ""}`}
+                      className={`transition-opacity w-[32px] h-[32px] lg:w-[40px] lg:h-[40px] duration-300 ${service.id === 1 ? "lg:w-[65px] lg:h-[65px] lg:-mt-2" : ""} ${service.id === 4 ? "lg:w-[35px] lg:h-[35px]" : ""}`}
 
                     />
                   </div>

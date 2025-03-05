@@ -130,13 +130,13 @@ const IndBrife = () => {
                 <p className="lg:mt-2 mt-3 text-[20px] leading-[28px]">
                   {industry.description}
                 </p>
-                <div className="flex flex-wrap gap-6 mt-10 ">
+                <div className="flex flex-wrap gap-y-6 lg:gap-x-[40px] gap-x-6 mt-10 ">
                   {(industry.logos ?? []).map((logo, i) => (
                     <img
                       key={i}
                       src={logo}
                       alt={`Logo ${i + 1}`}
-                      className="h-10"
+                      className="h-14"
                     />
                   ))}
                 </div>

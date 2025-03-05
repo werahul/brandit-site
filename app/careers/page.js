@@ -25,11 +25,11 @@ const page = () => {
             </p>
           </div>
 
-          <motion.div className="absolute flex items-center justify-center w-full">
+          <motion.div className="absolute flex items-center justify-center w-full px-20 ">
             <img
               src="/images/careerImg.png"
               alt=""
-              className="max-w-[94vw] lg:mt-20 mt-8 object-fill"
+              className="max-w-[87vw] lg:mt-20 mt-8 "
             />
           </motion.div>
         </div>

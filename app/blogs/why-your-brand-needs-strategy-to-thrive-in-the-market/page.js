@@ -40,7 +40,7 @@ const page = () => {
     <div className="bg-[#002A00]">
       <Navbar />
       <div className=" lg:pb-40 pb-16 ">
-        <div className=" max-container text-white lg:px-16 px-5 lg:pt-[280px] pt-[140px] pb-0 flex items-center lg:space-x-40">
+        <div className=" max-container text-white lg:px-16 px-5 lg:pt-[240px] pt-[140px] pb-0 flex items-center lg:space-x-40">
           <motion.div>
             <img
               src="/blogsImg/mainBanner6.png"

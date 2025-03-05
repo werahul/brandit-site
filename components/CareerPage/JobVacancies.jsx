@@ -158,7 +158,7 @@ const JobVacancies = () => {
                     <div className="text-right lg:hidden">
                       <button
                         onClick={() => handleToggleJob(job.id)}
-                        className="w-8 h-8 rounded-full border border-current inline-flex items-center justify-center"
+                        className="w-8 h-8 rounded-full border border-current flex items-center justify-center"
                       >
                         {expandedJob === job.id ? "-" : "+"}
                       </button>
@@ -174,7 +174,7 @@ const JobVacancies = () => {
                   <div className="text-right lg:block hidden">
                     <button
                       onClick={() => handleToggleJob(job.id)}
-                      className="w-8 h-8 rounded-full border border-current inline-flex items-center justify-center"
+                      className="w-10 h-10 rounded-full border border-current inline-flex items-center justify-center"
                     >
                       {expandedJob === job.id ? "-" : "+"}
                     </button>
@@ -185,7 +185,7 @@ const JobVacancies = () => {
               {/* Expanded Job Details */}
               {expandedJob === job.id && (
                 <div className="font-kanit bg-[#005E00] border-t border-[#B3B3B380]  text-white pt-5 pb-20 ">
-                  <div className="h-auto gap-8   relative lg:px-16 px-5 ">
+                  <div className="h-auto gap-8   relative lg:px-16 px-5 max-container ">
                     <div className="w-[100%] ">
                       <h3 className="text-[18px] mb-4 mt-10">
                         Overview of Role

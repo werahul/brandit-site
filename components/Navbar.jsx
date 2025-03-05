@@ -30,17 +30,17 @@ const Navbar = () => {
 
         {/* Desktop Menu */}
         <div className="nav-menu lg:flex flex-row space-x-[32px] hidden">
-          {["about", "work", "services", "industries", "blogs", "careers"].map((item) => (
-            <Link
-              key={item}
-              href={`/${item}`}
-              className={`${
-                pathname === `/${item}` ? "text-[#45D400]" : "text-white"
-              } transition-colors duration-300`}
-            >
-              {item.charAt(0).toUpperCase() + item.slice(1)}
-            </Link>
-          ))}
+        {["about", "work", "services", "industries", "blogs", "careers"].map((item) => (
+          <Link
+            key={item}
+            href={`/${item}`}
+            className={`${
+              pathname.startsWith(`/${item}`) ? "text-[#45D400]" : "text-white"
+            } transition-colors duration-300`}
+          >
+            {item.charAt(0).toUpperCase() + item.slice(1)}
+          </Link>
+        ))}
         </div>
 
         {/* CTA Button (Desktop) */}

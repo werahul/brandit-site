@@ -64,17 +64,17 @@ const TeamMember = ({ member, isActive, onMouseEnter, onMouseLeave }) => (
       </div>
 
       {/* Profile Image */}
-      <div className="w-[150px] h-[150px] rounded-full bg-gray-200 overflow-hidden">
-        {isActive ? (
+      {isActive ? (
+        <div className="w-[150px] h-[150px] rounded-full bg-transparent overflow-hidden">
           <img
             src={member.image}
             alt={member.name}
             className="w-full h-full object-cover"
           />
-        ) : (
-          ""
-        )}
-      </div>
+        </div>
+      ) : (
+        ""
+      )}
 
       {/* Designation and LinkedIn */}
       <div className="flex items-end gap-4 pt-20">
@@ -131,12 +131,18 @@ const TeamMember = ({ member, isActive, onMouseEnter, onMouseLeave }) => (
       </div>
 
       <div className="flex items-center gap-4 mt-3">
-        <span className="lg:text-[48px] text-[40px] leading-[40px]">{member.name}</span>
+        <span className="lg:text-[48px] text-[40px] leading-[40px]">
+          {member.name}
+        </span>
       </div>
 
       {/* Designation and LinkedIn */}
       <div className="lg:flex items-center lg:gap-4 mt-3">
-        {<span className="text-[24px] leading-[24px]">{member.designation}</span>}
+        {
+          <span className="text-[24px] leading-[24px]">
+            {member.designation}
+          </span>
+        }
         {
           <a
             href={member.linkedin}
