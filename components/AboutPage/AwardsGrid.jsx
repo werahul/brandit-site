@@ -24,7 +24,7 @@ const awards = [
 ];
 
 const AwardCard = ({ award }) => (
-  <div className="bg-[#D9E7D9] p-6 rounded-[28px] hover:shadow-md transition-shadow">
+  <div className="bg-[#D9E7D9] flex flex-col items-center justify-center h-[200px] p-6 lg:rounded-[28px] rounded-[12px] hover:shadow-md transition-shadow">
     <p className="font-semibold lg:text-[20px] text-[18px] lg:leading-[26px] leading-[21px]">{award.title}</p>
     <p className="lg:text-[16px] text-[14px] lg:leading-[24px] leading-[16px] lg:mt-7 mt-5 ">{award.description}</p>
   </div>

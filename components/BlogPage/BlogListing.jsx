@@ -80,9 +80,7 @@ const BlogListing = () => {
             <Link href={blog.path}>
               <div
                 key={blog.id}
-                className={`relative rounded-lg overflow-hidden cursor-pointer group h-[397px] transition-all duration-300 ${
-                  index >= 3 ? "hidden lg:block" : ""
-                }`}
+                className={`relative rounded-lg overflow-hidden cursor-pointer group h-[397px] transition-all duration-300`}
               >
                 {/* Overlay */}
                 <div className="absolute inset-0 bg-[#D9E7D9] transition-opacity duration-300 group-hover:opacity-0"></div>

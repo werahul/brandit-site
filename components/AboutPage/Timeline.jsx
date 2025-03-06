@@ -11,7 +11,7 @@ const timelineData = [
     id: 1,
     title: "Clarity",
     description:
-      "Clear, crisp, and compelling; We craft stories that cut through the noise, ensuring your brand’s voice stands out. ",
+      "Clear, crisp, and compelling; We craft stories that cut through the noise, ensuring your brand’s voice stands out.",
   },
   {
     id: 2,
@@ -38,55 +38,42 @@ const Timeline = () => {
       const container = containerRef.current;
       const line = lineRef.current;
 
-      // Sync vertical line with scroll position
-      ScrollTrigger.create({
-        trigger: container,
-        start: "top top",
-        end: "bottom bottom",
-        scrub: true,
-        onUpdate: (self) => {
-          const progress = self.progress; // Value between 0 and 1
-          const lineHeight = progress * 100; // Convert progress to percentage
-          gsap.set(line, { height: `${lineHeight}%` });
+      // Progress Bar Animation
+      gsap.to(line, {
+        height: "100%",
+        ease: "power1.inOut",
+        scrollTrigger: {
+          trigger: itemsRef.current[0], 
+          start: "top 30%",
+          end: "bottom bottom",
+          scrub: 4,
         },
       });
 
-      // Animate timeline items
-      itemsRef.current.forEach((item) => {
+      // Ensure only one item has full opacity at a time
+      itemsRef.current.forEach((item, index) => {
         if (!item) return;
 
-        gsap.fromTo(
-          item,
-          { opacity: 0, y: 50 },
-          {
-            opacity: 1,
-            y: 0,
-            ease: "power2.out",
-            scrollTrigger: {
-              trigger: item,
-              start: "top 80%",
-              toggleActions: "play none none reverse",
-            },
-          }
-        );
+        ScrollTrigger.create({
+          trigger: item,
+          start: "top 20%",
+          end: "top 30%",
+          onEnter: () => {
+            gsap.to(itemsRef.current, { opacity: 0.3, duration: 0.5 });
+            gsap.to(item, { opacity: 1, duration: 0.5 });
+          },
+        });
       });
 
-      // Highlight circle indicators
+      // Highlight and scale the active circle indicator
       const setActiveIndicator = (activeIndex) => {
         indicatorsRef.current.forEach((indicator, index) => {
-          if (index === activeIndex) {
-            gsap.to(indicator, {
-              backgroundColor: "white",
-              scale: 1.2,
-              duration: 0.3,
-            });
-          } else {
-            gsap.to(indicator, {
-              backgroundColor: "gray",
-              scale: 1,
-              duration: 0.3,
-            });
-          }
+          gsap.to(indicator, {
+            backgroundColor: index === activeIndex ? "white" : "gray",
+            scale: index === activeIndex ? 1.3 : 1,
+            opacity: index === activeIndex ? 1 : 0.3,
+            duration: 0.4,
+          });
         });
       };
 
@@ -107,50 +94,40 @@ const Timeline = () => {
   return (
     <div
       ref={containerRef}
-      className="bg-[#002A00] text-white px-0 pt-0 pb-20 lg:min-h-[100vh]"
+      className="bg-[#002A00] text-white px-0 pt-0 pb-40 lg:min-h-[900px]" // Increased height
     >
-      <div className="max-container relative flex gap-8">
+      <div className="max-container relative flex gap-8 font-kanit">
         {/* Vertical Line and Circle Indicators */}
         <div className="relative w-1 ml-0">
           <div
             ref={lineRef}
-            className="absolute lg:left-20 left-5 w-0.5 rounded-[30px] bg-white transform -translate-x-1/2 h-0"
+            className="absolute lg:left-20 left-5 lg:w-1 w-0.5 rounded-[30px] bg-white transform -translate-x-1/2 h-0"
           />
           {timelineData.map((_, index) => (
             <div
               key={index}
               ref={(el) => (indicatorsRef.current[index] = el)}
-              className="absolute lg:left-20 left-5 w-6 h-6 bg-gray-400 border-2 border-white rounded-full transform -translate-x-1/2 lg:block hidden"
-              style={{
-                top: `${index * 40.5 + 14}%`, // Manually set positions (adjust these values as needed)
-              }}
-            />
-          ))}
-          {timelineData.map((_, index) => (
-            <div
-              key={index}
-              ref={(el) => (indicatorsRef.current[index] = el)}
-              className="absolute lg:left-20 left-5 w-6 h-6 bg-gray-400 border-2 border-white rounded-full transform -translate-x-1/2 lg:hidden"
-              style={{
-                top: `${index * 37 + 10}%`, // Manually set positions (adjust these values as needed)
-              }}
+              className="absolute lg:left-20 left-5 w-[12px] h-[12px] bg-gray-500 border-2 border-white rounded-full transform -translate-x-1/2"
+              style={{ top: `${index * 40.5 + 14}%` }}
             />
           ))}
         </div>
 
         {/* Timeline Items */}
-        <div className="flex flex-col items-start lg:gap-y-[140px] gap-y-[120px] lg:ml-40 ml-10 mt-16 ">
+        <div className="flex flex-col items-start lg:gap-y-[160px] gap-y-[140px] lg:ml-40 ml-10 mt-16">
           {timelineData.map((item, index) => (
             <div
               key={item.id}
               ref={(el) => (itemsRef.current[index] = el)}
-              className="flex items-center gap-6 opacity-0 lg:pr-16 pr-5"
+              className="flex items-center gap-6 opacity-30 transition-opacity duration-500 lg:pr-16 pr-5"
             >
-              <div className="flex lg:flex-row flex-col lg:space-x-10 lg:items-center">
-                <h3 className="lg:text-[48px] text-[28px] lg:leading-[48px] leading-[33px] font-bold mb-3  lg:min-w-[370px]">
+              <div className="flex lg:flex-row flex-col lg:space-x-52 lg:items-center">
+                <h3 className="lg:text-[48px] text-[28px] lg:leading-[48px] leading-[33px] mb-3 lg:min-w-[370px]">
                   {item.title}
                 </h3>
-                <p className="lg:text-[24px] text-[16px] lg:leading-[27px] leading-[16px]">{item.description}</p>
+                <p className="lg:text-[24px] text-[16px] lg:leading-[27px] leading-[140%]">
+                  {item.description}
+                </p>
               </div>
             </div>
           ))}

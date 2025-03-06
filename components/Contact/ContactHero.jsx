@@ -52,7 +52,7 @@ const ContactHero = () => {
                   </div>
                   <div>
                     <a href="mailto:communicate@branditcommunications.com">
-                      <p className="lg:text-[24px] text-[19.5px]  font-bold mt-1 group-hover:text-[#45D400]">
+                      <p className="lg:text-[24px] text-[19.5px]  font-bold mt-1 hover:text-[#45D400]">
                       communicate <br className="lg:hidden"/> @branditcommunications.com
                       </p>
                     </a>
@@ -82,7 +82,7 @@ const ContactHero = () => {
                       rel="noopener noreferrer"
                     >
                      
-                      <p className="lg:text-[24px] text-[19.5px] text-[#1C1D58] font-bold mt-1 group-hover:text-[#45D400]">
+                      <p className="lg:text-[24px] text-[19.5px] text-[#1C1D58] font-bold mt-1 inline-block hover:text-[#45D400]">
                         9632299872
                       </p>
                     </a>

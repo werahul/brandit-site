@@ -61,8 +61,8 @@ const Navbar = () => {
           <Image
             src="/humIcon.svg"
             alt="Menu Icon"
-            width={32}
-            height={32}
+            width={36}
+            height={36}
             className="cursor-pointer"
           />
         </div>

@@ -20,7 +20,7 @@ const FeaturedClients = ({ images, title }) => {
   return (
     <div>
       {/* Partner Logos Section */}
-      <div className="pt-[90px]" ref={sectionRef}>
+      <div className="lg:pt-[90px] pt-[50px]" ref={sectionRef}>
         <h6 className="text-[23px] leading-[27px] text-center text-[#1C1D58]">
           {title}
         </h6>

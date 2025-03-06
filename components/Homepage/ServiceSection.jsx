@@ -15,7 +15,7 @@ const fadeUpVariants = {
 };
 
 const ServiceSection = () => {
-  const [hoveredService, setHoveredService] = useState(null);
+  const [hoveredService, setHoveredService] = useState(1);
 
   const services = [
     {
@@ -151,7 +151,7 @@ const ServiceSection = () => {
                       alt={`${service.title} icon`}
                       width={50}
                       height={50}
-                      className={`transition-opacity w-[32px] h-[32px] lg:w-[40px] lg:h-[40px] duration-300 ${service.id === 1 ? "lg:w-[65px] lg:h-[65px] lg:-mt-2" : ""} ${service.id === 4 ? "lg:w-[35px] lg:h-[35px]" : ""}`}
+                      className={`transition-opacity w-[32px] h-[32px] lg:w-[40px] lg:h-[40px] duration-300 ${service.id === 1 ? "lg:w-[70px] lg:h-[70px] lg:-mt-2" : ""} ${service.id === 4 ? "lg:w-[32px] lg:h-[32px]" : ""}`}
 
                     />
                   </div>
