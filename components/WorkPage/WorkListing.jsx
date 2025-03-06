@@ -82,6 +82,7 @@ const WorkListing = () => {
                 <img
                   src={item.image}
                   alt={item.title}
+                   loading="lazy"
                   className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                 />
 
@@ -90,7 +91,7 @@ const WorkListing = () => {
 
                 {/* Logo & Name Tag */}
                 <div className="absolute bottom-[18px] w-full flex flex-col items-center text-white opacity-100">
-                  <img src={item.csLogo} alt={item.nameTag} />
+                  <img src={item.csLogo} alt={item.nameTag}  loading="lazy" />
                   <p className="text-[14px] py-1">{item.nameTag}</p>
                 </div>
 

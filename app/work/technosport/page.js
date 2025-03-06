@@ -6,10 +6,11 @@ import Navbar from "@/components/Navbar";
 import { motion } from "framer-motion";
 import OtherBlogs from "@/components/BlogPage/OtherBlogs";
 import OtherCaseStrudies from "@/components/WorkPage/OtherCaseStrudies";
+import Head from "next/head";
 
 const page = () => {
   const newsPaperImages = [
-   "/caseImages/techno1.png",
+    "/caseImages/techno1.png",
     "/caseImages/techno2.png",
     "/caseImages/techno3.png",
     "/caseImages/techno4.png",
@@ -62,6 +63,13 @@ const page = () => {
 
   return (
     <div className="bg-[#002A00]">
+      <Head>
+        <title>Work | BRANDiT</title>
+        <meta
+          name="description"
+          content="We adopted a bold approach to elevate TechnoSport above the competition. Our key strategies included:"
+        />
+      </Head>
       <Navbar />
       <div className=" lg:pb-40 pb-14 ">
         <div className=" max-container text-white lg:px-16 px-5 lg:pt-[240px] pt-[140px] pb-0 flex items-center lg:space-x-40">
@@ -170,8 +178,11 @@ const page = () => {
                       people could trust.
                     </li>
                     <li>
-                      <strong> Capitalizing on Key Events: </strong> We leveraged the Cricket World Cup with a fun, relatable campaign— “Is World Cup Ko Har Maidaan Mein Khelo”—that connected TechnoSport’s activewear to India’s passion for cricket.
-                      cric
+                      <strong> Capitalizing on Key Events: </strong> We
+                      leveraged the Cricket World Cup with a fun, relatable
+                      campaign— “Is World Cup Ko Har Maidaan Mein Khelo”—that
+                      connected TechnoSport’s activewear to India’s passion for
+                      cricket. cric
                     </li>
                   </ul>
                 </p>

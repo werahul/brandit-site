@@ -121,6 +121,7 @@ const TestimonialsCarousel = () => {
                     <img
                       src={testimonial.image}
                       alt={testimonial.name}
+                       loading="lazy"
                       className="w-full h-full object-cover rounded-lg mt-20"
                     />
                   </div>

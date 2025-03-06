@@ -1,10 +1,18 @@
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
+import Head from "next/head";
 import React from "react";
 
 const page = () => {
   return (
     <div>
+    <Head>
+        <title>Privacy Policy | BRANDiT</title>
+        <meta
+          name="description"
+          content="At BrandiT Communications, we understand that your privacy is important. That's why we are committed to safeguarding the personal information you share with us. By visiting our website and using our services, you agree to the practices described in this policy. Let’s break it down for you!"
+        />
+      </Head>
       <Navbar />
       <div className=" bg-[#003800] lg:rounded-b-[80px] rounded-b-[40px] pb-20 text-white lg:pt-[280px] pt-[140px] ">
         <div className="max-container lg:px-16 px-5">

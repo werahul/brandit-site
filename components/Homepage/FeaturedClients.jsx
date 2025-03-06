@@ -39,7 +39,7 @@ const FeaturedClients = ({ images, title }) => {
                 initial="hidden"
                 animate={isInView ? "visible" : "hidden"}
               >
-                <img src={el} className="imaGe2" alt="partner logos" />
+                <img src={el} className="imaGe2" alt="partner logos"  loading="lazy" />
               </motion.div>
             ))}
           </div>

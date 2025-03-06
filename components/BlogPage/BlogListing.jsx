@@ -92,6 +92,7 @@ const BlogListing = () => {
                 <img
                   src={blog.image}
                   alt={blog.title}
+                   loading="lazy"
                   className="w-full h-full object-cover scale-105 transition-all duration-300  group-hover:scale-100"
                 />
 

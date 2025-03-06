@@ -5,10 +5,18 @@ import Navbar from "@/components/Navbar";
 import React from "react";
 import { motion } from "framer-motion";
 import WorkListing from "@/components/WorkPage/WorkListing";
+import Head from "next/head";
 
 const page = () => {
   return (
     <div className="bg-[#002A00] overflow-hidden">
+      <Head>
+        <title>Work | BRANDiT</title>
+        <meta
+          name="description"
+          content="Bringing brands to life with stories that engage & endure."
+        />
+      </Head>
       <Navbar />
 
       <div className="bg-[#002A00] lg:pb-40 pb-20 ">
@@ -20,7 +28,9 @@ const page = () => {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 1, delay: 0.2, ease: "easeInOut" }}
             >
-              Bringing brands to life with stories that engage <br className="lg:hidden block" />& endure.
+              Bringing brands to life with stories that engage{" "}
+              <br className="lg:hidden block" />
+              & endure.
             </motion.h1>
           </div>
         </div>

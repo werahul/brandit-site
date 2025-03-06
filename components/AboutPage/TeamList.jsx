@@ -126,6 +126,7 @@ const TeamMember = ({ member, isActive, onMouseEnter, onMouseLeave }) => (
         <img
           src={member.image}
           alt={member.name}
+           loading="lazy"
           className="w-full h-full object-cover"
         />
       </div>

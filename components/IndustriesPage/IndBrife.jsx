@@ -121,6 +121,7 @@ const IndBrife = () => {
               <img
                 src={industry.image}
                 alt={industry.title}
+                loading="lazy"
                 className="w-full md:w-1/3 rounded-lg object-cover"
               />
               <div className="md:w-2/3 lg:mt-0 mt-5">

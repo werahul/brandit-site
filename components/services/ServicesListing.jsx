@@ -39,7 +39,7 @@ const ServicesListing = () => {
             </ul>
           </div>
           <div className="lg:w-1/2 lg:mb-0 mb-10">
-            <img src="/images/serv1.png" alt="" />
+            <img src="/images/serv1.png" alt="ia"  loading="lazy" />
           </div>
         </div>
         <div className="flex lg:flex-row-reverse flex-col-reverse items-center gap-x-[100px] mt-20">
@@ -65,7 +65,7 @@ const ServicesListing = () => {
             </ul>
           </div>
           <div className="lg:w-1/2 lg:mb-0 mb-10">
-            <img src="/images/serv2.png" alt="" />
+            <img src="/images/serv2.png" alt="laz"  loading="lazy" />
           </div>
         </div>
         <div className="flex lg:flex-row flex-col-reverse items-center gap-x-[100px] mt-20">
@@ -90,7 +90,7 @@ const ServicesListing = () => {
             </ul>
           </div>
           <div className="lg:w-1/2 lg:mb-0 mb-10">
-            <img src="/images/serv3.png" alt="" />
+            <img src="/images/serv3.png" alt="service"  loading="lazy"/>
           </div>
         </div>
         <div className="flex lg:flex-row-reverse flex-col-reverse items-center gap-x-[100px] mt-20">
@@ -115,7 +115,7 @@ const ServicesListing = () => {
             </ul>
           </div>
           <div className="lg:w-1/2 lg:mb-0 mb-10">
-            <img src="/images/serv4.png" alt="" />
+            <img src="/images/serv4.png" alt="service"  loading="lazy"/>
           </div>
         </div>
         <div className="flex lg:flex-row flex-col-reverse items-center gap-x-[100px] mt-20">
@@ -140,7 +140,7 @@ const ServicesListing = () => {
             </ul>
           </div>
           <div className="lg:w-1/2 lg:mb-0 mb-10">
-            <img src="/images/serv5.png" alt="" />
+            <img src="/images/serv5.png" alt="service"  loading="lazy"/>
           </div>
         </div>
       </div>

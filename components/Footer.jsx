@@ -35,10 +35,10 @@ const Footer = () => {
       <div className="max-container lg:px-16 px-5 lg:pt-[100px] pt-[40px] lg:pb-10 pb-5">
         <div className="lg:flex flex-row lg:space-x-10 lg:pb-20 pb-5">
           {/* Brand Section */}
-          <div className=" lg:w-[50%]">
-            <div className="logo flex justify-between items-center">
+          <div className=" lg:w-[50%] ">
+            <div className="logo flex justify-between items-start">
               <Image
-                className="lg:w-[275px] lg:h-[76px] w-[146px] h-[50px]"
+                className="lg:w-[275px] lg:h-[76px] w-[146px] h-[50px] lg:-ml-7"
                 src="/mainLogo.svg"
                 alt="pinterest logo"
                 width={275}

@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import { motion } from "framer-motion";
 import OtherBlogs from "@/components/BlogPage/OtherBlogs";
+import Head from "next/head";
 
 const page = () => {
   const blogsData = [
@@ -35,6 +36,13 @@ const page = () => {
   ];
   return (
     <div className="bg-[#002A00]">
+      <Head>
+        <title>Blogs | BRANDiT</title>
+        <meta
+          name="description"
+          content="PR vs Advertising: Why earned media wins"
+        />
+      </Head>
       <Navbar />
       <div className=" lg:pb-40 pb-16 ">
         <div className=" max-container text-white lg:px-16 px-5 lg:pt-[240px] pt-[140px] pb-0 flex items-center lg:space-x-40">

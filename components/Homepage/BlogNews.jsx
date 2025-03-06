@@ -53,9 +53,11 @@ const BlogNews = () => {
     },
   ];
 
-  const sortedBlogs = [...blogs].sort((a, b) => new Date(b.dates) - new Date(a.dates));
+  const sortedBlogs = [...blogs].sort(
+    (a, b) => new Date(b.dates) - new Date(a.dates)
+  );
   return (
-    <div className="bg-white text-[#1C1D58] lg:pt-10 px-0">
+    <div className="bg-white text-[#1C1D58] lg:pt-0 px-0">
       <div className="max-container lg:px-16 px-5">
         <div className="lg:flex justify-between items-center mb-8">
           <h2 className="text-[36px] lg:text-h2 font-bold">Perspectives</h2>
@@ -83,6 +85,7 @@ const BlogNews = () => {
                 <img
                   src={blog.image}
                   alt={blog.title}
+                  loading="lazy"
                   className="w-full h-full object-cover scale-105 transition-all duration-300  group-hover:scale-100"
                 />
 

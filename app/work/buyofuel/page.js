@@ -6,6 +6,7 @@ import Navbar from "@/components/Navbar";
 import { motion } from "framer-motion";
 import OtherBlogs from "@/components/BlogPage/OtherBlogs";
 import OtherCaseStrudies from "@/components/WorkPage/OtherCaseStrudies";
+import Head from "next/head";
 
 const page = () => {
   const newsPaperImages = [
@@ -61,6 +62,13 @@ const page = () => {
 
   return (
     <div className="bg-[#002A00]">
+    <Head>
+        <title>Work | BRANDiT</title>
+        <meta
+          name="description"
+          content="  Buyofuel, founded in 2020 in Coimbatore, India, is an online marketplace for biofuels and waste materials."
+        />
+      </Head>
       <Navbar />
       <div className=" lg:pb-40 pb-14 ">
         <div className=" max-container text-white lg:px-16 px-5 lg:pt-[240px] pt-[140px] pb-0 flex items-center lg:space-x-40">

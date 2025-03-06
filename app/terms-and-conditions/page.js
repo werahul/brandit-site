@@ -1,10 +1,18 @@
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
+import Head from "next/head";
 import React from "react";
 
 const page = () => {
   return (
     <div>
+      <Head>
+        <title>Terms and Conditions | BRANDiT</title>
+        <meta
+          name="description"
+          content="BrandiT Communications welcomes you to our website. We sincerely appreciate your interest and kindly encourage you to review these terms and conditions before using our services."
+        />
+      </Head>
       <Navbar />
       <div className=" bg-[#003800] lg:rounded-b-[80px] rounded-b-[40px] pb-20 text-white lg:pt-[280px] pt-[140px] ">
         <div className="max-container lg:px-16 px-5">
@@ -203,8 +211,9 @@ const page = () => {
           <div className="">
             <p className="text-[18px] leading-[21px] mt-3">
               If you have any questions or concerns regarding these terms, we
-              warmly invite you to reach out to us via email at
-              communicate <br className="lg:block hidden" />@branditcommunications.com. 
+              warmly invite you to reach out to us via email at communicate{" "}
+              <br className="lg:block hidden" />
+              @branditcommunications.com. 
             </p>
           </div>
         </div>

@@ -5,11 +5,19 @@ import TeamList from "@/components/AboutPage/TeamList";
 import Timeline from "@/components/AboutPage/Timeline";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
+import Head from "next/head";
 import React from "react";
 
 const page = () => {
   return (
     <div className="bg-[#002A00]">
+      <Head>
+        <title>About Us | BRANDiT</title>
+        <meta
+          name="description"
+          content="We amplify your story, giving it a voice that resonates."
+        />
+      </Head>
       <Navbar />
       <AboutHero />
       <Timeline />

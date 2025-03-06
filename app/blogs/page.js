@@ -7,10 +7,18 @@ import { motion } from "framer-motion";
 import WorkListing from "@/components/WorkPage/WorkListing";
 import BlogListing from "@/components/BlogPage/BlogListing";
 import Link from "next/link";
+import Head from "next/head";
 
 const page = () => {
   return (
     <div className="bg-[#002A00]">
+    <Head>
+        <title>Blogs | BRANDiT</title>
+        <meta
+          name="description"
+          content="Why your brand needs strategy to thrive in the market"
+        />
+      </Head>
       <Navbar />
 
       <div className="bg-[#002A00] lg:pb-40 pb-32 ">

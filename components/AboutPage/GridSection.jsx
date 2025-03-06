@@ -19,6 +19,7 @@ const GridSection = () => {
       <img
         src="/images/bgElementcase.png"
         alt="Background Element"
+        loading="lazy"
         className="absolute bottom-0 left-0 object-cover rounded-b-[80px]"
       />
       {/* Title and Description Section */}
@@ -56,16 +57,18 @@ const GridSection = () => {
           src="/images/aboutCollage.png"
           alt="Background Element"
           className=""
+          loading="lazy"
         />
       </div>
 
       <div className="lg:hidden px-5">
-      <img
-        src="/images/aboutCollageMobile.png"
-        alt="Background Element"
-        className=""
-      />
-    </div>
+        <img
+          src="/images/aboutCollageMobile.png"
+          alt="Background Element"
+          className=""
+          loading="lazy"
+        />
+      </div>
     </div>
   );
 };

@@ -8,6 +8,7 @@ import ServicesListing from "@/components/services/ServicesListing";
 import CaseStudies from "@/components/Homepage/CaseStudies";
 import BlogNews from "@/components/Homepage/BlogNews";
 import IndustriesWeServe from "@/components/Homepage/IndustriesWeServe";
+import Head from "next/head";
 
 const images = [
   "/clientsLogo/w1.svg",
@@ -24,6 +25,13 @@ const images = [
 const page = () => {
   return (
     <div>
+      <Head>
+        <title>Services | BRANDiT</title>
+        <meta
+          name="description"
+          content="We turn your brand's message into news everyone wants to share."
+        />
+      </Head>
       <Navbar />
       <div className="bg-[#002A00] ">
         <div className=" max-container text-white lg:px-16 px-5 lg:pt-[280px] pt-[160px] pb-0 flex items-center lg:space-x-40">

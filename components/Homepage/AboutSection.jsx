@@ -57,7 +57,7 @@ const AboutSection = () => {
           viewport={{ once: true, amount: 0.5 }}
         >
           {/* Left Content */}
-          <motion.div className="relative" variants={fadeUpVariants} custom={0}>
+          <motion.div className="relative border w-[45%]" variants={fadeUpVariants} custom={0}>
             {/* Background Image */}
             <img
               src="/images/bgElementAbout.png"
@@ -66,9 +66,9 @@ const AboutSection = () => {
             />
             {/* Text Content */}
             <h2 className="lg:text-h2 text-[44px] leading-[44px] lg:leading-[55px] text-[#1C1D58] font-bold relative">
-              Where Media Meets <br className="lg:block hidden" /> Strategy,
-              Crisis <br className="lg:block hidden" /> Sparks Innovation,{" "}
-              <br className="lg:block hidden" /> And Brands Thrive.
+              Where Media Meets  Strategy,
+              Crisis Sparks Innovation,{" "}
+               And Brands Thrive.
             </h2>
           </motion.div>
 

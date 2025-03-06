@@ -9,6 +9,7 @@ import ServiceSection from "@/components/Homepage/ServiceSection";
 import TestimonialsCarousel from "@/components/Homepage/TestimonialsCarousel";
 import WhyChooseUs from "@/components/Homepage/WhyChoosUs";
 import Navbar from "@/components/Navbar";
+import Head from "next/head";
 import React from "react";
 
 const page = () => {
@@ -27,6 +28,13 @@ const page = () => {
   ];
   return (
     <div className="">
+      <Head>
+        <title>BRANDiT</title>
+        <meta
+          name="description"
+          content="We craft compelling narratives that resonate with your audience and build lasting relationships."
+        />
+      </Head>
       <Navbar />
       <HeroSection />
       <div className=" bg-white">

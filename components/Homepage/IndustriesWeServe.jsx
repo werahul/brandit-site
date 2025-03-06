@@ -120,6 +120,7 @@ const IndustriesWeServe = () => {
                 <motion.img
                   src={industry.image}
                   alt={industry.name}
+                   loading="lazy"
                   className="w-full h-[151px] object-cover transition-transform duration-300 group-hover:scale-105"
                   whileHover={{ scale: 1.1 }}
                 />

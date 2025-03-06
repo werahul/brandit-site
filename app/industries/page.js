@@ -7,10 +7,18 @@ import { motion } from "framer-motion";
 import IndBrife from "@/components/IndustriesPage/IndBrife";
 import CaseStudies from "@/components/Homepage/CaseStudies";
 import TestimonialsCarousel from "@/components/Homepage/TestimonialsCarousel";
+import Head from "next/head";
 
 const page = () => {
   return (
     <div>
+      <Head>
+        <title>Industries we serve | BRANDiT</title>
+        <meta
+          name="description"
+          content="Fueling industries with strategic PR, innovative ideas, and impactful storytelling."
+        />
+      </Head>
       <Navbar />
 
       <div className="lg:pb-[400px] pb-[140px] bg-[#002A00] z-10 ">
@@ -21,8 +29,8 @@ const page = () => {
               Shaping Industries, <br /> Building Impact.
             </h1>
             <p className="lg:text-[23px] lg:leading-[27px] text-[18px] leading-[24px] lg:mt-2 mt-7">
-              Fueling industries with strategic PR, innovative ideas, and <br className="lg:block hidden" />{" "}
-              impactful storytelling.
+              Fueling industries with strategic PR, innovative ideas, and{" "}
+              <br className="lg:block hidden" /> impactful storytelling.
             </p>
           </div>
 
@@ -31,6 +39,7 @@ const page = () => {
               src="/images/indMain.png"
               alt=""
               className="max-w-[87vw] lg:mt-20 mt-8 "
+              loading="lazy"
             />
           </motion.div>
         </div>
