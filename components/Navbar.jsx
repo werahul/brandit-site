@@ -30,24 +30,28 @@ const Navbar = () => {
 
         {/* Desktop Menu */}
         <div className="nav-menu lg:flex flex-row space-x-[32px] hidden">
-        {["about", "work", "services", "industries", "blogs", "careers"].map((item) => (
-          <Link
-            key={item}
-            href={`/${item}`}
-            className={`${
-              pathname.startsWith(`/${item}`) ? "text-[#45D400]" : "text-white"
-            } transition-colors duration-300`}
-          >
-            {item.charAt(0).toUpperCase() + item.slice(1)}
-          </Link>
-        ))}
+          {["about", "work", "services", "industries", "blogs", "careers"].map(
+            (item) => (
+              <Link
+                key={item}
+                href={`/${item}`}
+                className={`${
+                  pathname.startsWith(`/${item}`)
+                    ? "text-[#45D400]"
+                    : "text-white"
+                } transition-colors duration-300`}
+              >
+                {item.charAt(0).toUpperCase() + item.slice(1)}
+              </Link>
+            )
+          )}
         </div>
 
         {/* CTA Button (Desktop) */}
         <div className="cta lg:block hidden">
           <Link href="/contact">
-            <button className="relative w-[130px] h-[56px] bg-gradient-to-r from-[#45D400] to-[#45D400] text-black text-[16px] rounded-[40px] overflow-hidden group">
-              <span className="absolute inset-0 bg-gradient-to-r from-[#45D400] via-[#36BA00] to-[#45D400] transition-transform scale-0 group-hover:scale-100 group-hover:rotate-180 duration-500 ease-in-out rounded-[40px]"></span>
+            <button className="relative w-[130px] h-[56px] bg-[#C5F2B0] text-black text-[16px] rounded-[40px] overflow-hidden group">
+              <span className="absolute inset-0 bg-gradient-to-r from-[#7CAF64] via-[#5E8F45] to-[#7CAF64] transition-transform scale-0 group-hover:scale-100 group-hover:rotate-180 duration-500 ease-in-out rounded-[40px]"></span>
               <span className="relative z-10 block text-center group-hover:text-white transition-transform duration-300 ease-in-out group-hover:scale-110">
                 Write to Us
               </span>
@@ -72,7 +76,14 @@ const Navbar = () => {
       {isMenuOpen && (
         <div className="showAndHideBox bg-transparent px-5 mt-[10px] z-50">
           <div className="w-full flex flex-col h-auto rounded-[20px] border border-[#1C1D58] border-opacity-55 bg-white text-[#1C1D58] px-5 py-7 text-[28px] space-y-5">
-            {["about", "work", "services", "industries", "blogs", "careers"].map((item) => (
+            {[
+              "about",
+              "work",
+              "services",
+              "industries",
+              "blogs",
+              "careers",
+            ].map((item) => (
               <Link
                 key={item}
                 href={`/${item}`}
@@ -88,8 +99,8 @@ const Navbar = () => {
             {/* CTA Button (Mobile) */}
             <div className="pt-10">
               <Link href="/contact">
-                <button className="relative w-full h-[56px] bg-gradient-to-r from-[#45D400] to-[#45D400] text-black text-[16px] rounded-[40px] overflow-hidden group">
-                  <span className="absolute inset-0 bg-gradient-to-r from-[#45D400] via-[#36BA00] to-[#45D400] transition-transform scale-0 group-hover:scale-100 group-hover:rotate-180 duration-500 ease-in-out rounded-[40px]"></span>
+                <button className="relative w-full h-[56px] bg-gradient-to-r from-[#C5F2B0] to-[#C5F2B0] text-black text-[16px] rounded-[40px] overflow-hidden group">
+                  <span className="absolute inset-0 bg-gradient-to-r from-[#C5F2B0] via-[#bbc9b5] to-[#C5F2B0] transition-transform scale-0 group-hover:scale-100 group-hover:rotate-180 duration-500 ease-in-out rounded-[40px]"></span>
                   <span className="relative z-10 block text-center group-hover:text-white transition-transform duration-300 ease-in-out group-hover:scale-110">
                     Write to Us
                   </span>

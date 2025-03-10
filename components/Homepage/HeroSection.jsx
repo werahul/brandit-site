@@ -69,13 +69,15 @@ const HeroSection = () => {
             transition={{ duration: 0.8, delay: 0.6, ease: "easeInOut" }}
           >
             <Link href="/about">
-              <button className="relative lg:w-[150px] w-[143px] h-[56px] bg-gradient-to-r from-[#45D400] to-[#45D400] text-black text-[16px] rounded-[40px] overflow-hidden group">
-                <span className="absolute inset-0 bg-gradient-to-r from-[#45D400] via-[#36BA00] to-[#45D400] transition-transform scale-0 group-hover:scale-100 group-hover:rotate-180 duration-500 ease-in-out rounded-[40px]"></span>
-                <span className="relative z-10 block text-center group-hover:text-white transition-transform duration-300 ease-in-out group-hover:scale-110">
-                  Know More
-                </span>
-                <span className="absolute -inset-1 bg-black opacity-0 group-hover:opacity-10 transition-opacity duration-300 rounded-[40px]"></span>
-              </button>
+             
+
+              <button className="relative lg:w-[150px] w-[143px] h-[56px] bg-[#C5F2B0] text-black text-[16px] rounded-[40px] overflow-hidden group">
+              <span className="absolute inset-0 bg-gradient-to-r from-[#7CAF64] via-[#5E8F45] to-[#7CAF64] transition-transform scale-0 group-hover:scale-100 group-hover:rotate-180 duration-500 ease-in-out rounded-[40px]"></span>
+              <span className="relative z-10 block text-center group-hover:text-white transition-transform duration-300 ease-in-out group-hover:scale-110">
+              Know More
+              </span>
+              <span className="absolute -inset-1 bg-black opacity-0 group-hover:opacity-10 transition-opacity duration-300 rounded-[40px]"></span>
+            </button>
             </Link>
           </motion.div>
         </div>

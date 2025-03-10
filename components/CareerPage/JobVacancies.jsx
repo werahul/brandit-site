@@ -242,10 +242,13 @@ const JobVacancies = () => {
                       </p>
                     </div>
 
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdfIG5VgWQY4v9K5yMqBi7_q35y9J5JDlKmb7JStRfaOEMUwg/viewform" target="_blank">
+                    <a
+                      href="https://docs.google.com/forms/d/e/1FAIpQLSdfIG5VgWQY4v9K5yMqBi7_q35y9J5JDlKmb7JStRfaOEMUwg/viewform"
+                      target="_blank"
+                    >
                       <div className="cta lg:mt-7 mt-10">
-                        <button className="relative lg:w-auto w-full px-5 h-[51px] bg-gradient-to-r from-[#45D400] to-[#45D400] text-black text-[16px] rounded-[40px] overflow-hidden group">
-                          <span className="absolute inset-0 bg-gradient-to-r from-[#45D400] via-[#36BA00] to-[#45D400] transition-transform scale-0 group-hover:scale-100 group-hover:rotate-180 duration-500 ease-in-out rounded-[40px]"></span>
+                        <button className="relative lg:w-auto w-full px-5 h-[51px] bg-[#C5F2B0] text-black text-[16px] rounded-[40px] overflow-hidden group">
+                          <span className="absolute inset-0 bg-gradient-to-r from-[#7CAF64] via-[#5E8F45] to-[#7CAF64] transition-transform scale-0 group-hover:scale-100 group-hover:rotate-180 duration-500 ease-in-out rounded-[40px]"></span>
                           <span className="relative z-10 block text-center group-hover:text-white transition-transform duration-300 ease-in-out group-hover:scale-110">
                             Apply Now
                           </span>
