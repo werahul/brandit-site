@@ -100,7 +100,12 @@ const IndBrife = () => {
       description:
         "Education is evolving with technology making learning more accessible and engaging than ever. At BrandiT Communications, we craft compelling narratives, drive media visibility, and position brands as pioneers in EdTech. From product launches to thought leadership, we ensure your brand shapes the future of learning. ",
       image: "/images/ind10.png",
-      logos: ["/sector/edTech1.svg", "/sector/edTech2.svg"],
+      logos: [
+        "/sector/edTech1.svg",
+        "/sector/edTech2.svg",
+        "/sector/edTech3.svg",
+        "/sector/edTech4.svg",
+      ],
     },
   ];
 

@@ -6,10 +6,10 @@ const TestimonialsCarousel = () => {
   const testimonials = [
     {
       id: 1,
-      text: "“BrandiT has been key to our branding since 2021. Manjuu and her team are professional, innovative, and help us reach a wide audience across platforms.”",
-      name: "Prashant Sankaran ",
-      position: "CEO, Interweave",
-      image: "/images/testi1.png",
+      text: "BrandiT has transformed our brand’s visibility with smart PR strategies. Their dedication and expertise truly set them apart. A game-changer for us.",
+      name: "Mr. Raksha Ramaiah",
+      position: "Director of MSR Developers and Builders (MSRDB)",
+      image: "/images/testi5.png",
     },
     {
       id: 2,
@@ -34,10 +34,11 @@ const TestimonialsCarousel = () => {
     },
     {
       id: 5,
-      text: "BrandiT has transformed our brand’s visibility with smart PR strategies. Their dedication and expertise truly set them apart. A game-changer for us.",
-      name: "Mr. Raksha Ramaiah",
-      position: "Director of MSR Developers and Builders (MSRDB)",
-      image: "/images/testi5.png",
+
+      text: "“BrandiT has been key to our branding since 2021. Manjuu and her team are professional, innovative, and help us reach a wide audience across platforms.”",
+      name: "Prashant Sankaran ",
+      position: "CEO, Interweave",
+      image: "/images/testi1.png",
     },
   ];
 
@@ -103,8 +104,16 @@ const TestimonialsCarousel = () => {
                         ? "z-20 scale-100 translate-x-0 opacity-100 rotate-0"
                         : "z-10 scale-95 opacity-70"
                     }
-                    ${isPrev ? "lg:-translate-x-[10%] -translate-x-[7%] h-[500px] -rotate-2 lg:translate-y-0 translate-y-[10%]" : ""}
-                    ${isNext ? "lg:translate-x-[10%] translate-x-[7%] h-[500px] lg:translate-y-0 translate-y-[10%] rotate-2" : ""}`}
+                    ${
+                      isPrev
+                        ? "lg:-translate-x-[10%] -translate-x-[7%] h-[500px] -rotate-2 lg:translate-y-0 translate-y-[10%]"
+                        : ""
+                    }
+                    ${
+                      isNext
+                        ? "lg:translate-x-[10%] translate-x-[7%] h-[500px] lg:translate-y-0 translate-y-[10%] rotate-2"
+                        : ""
+                    }`}
                 >
                   <div className="flex-1">
                     <blockquote className="lg:text-[24px] text-[18px] lg:leading-[36px] leading-[21px]">
@@ -114,14 +123,16 @@ const TestimonialsCarousel = () => {
                       <p className="font-bold text-[24px] leading-[36px] lg:mt-[50px] mt-[20px]">
                         {testimonial.name}
                       </p>
-                      <p className="text-[20px] leading-[24px]">{testimonial.position}</p>
+                      <p className="text-[20px] leading-[24px]">
+                        {testimonial.position}
+                      </p>
                     </div>
                   </div>
                   <div className="flex-shrink-0">
                     <img
                       src={testimonial.image}
                       alt={testimonial.name}
-                       loading="lazy"
+                      loading="lazy"
                       className="w-full h-full object-cover rounded-lg mt-20"
                     />
                   </div>
