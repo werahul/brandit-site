@@ -2,6 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const GridSection = () => {
   // Variants for fade-up animation
@@ -54,19 +55,18 @@ const GridSection = () => {
       {/* Grid Section */}
       <div className="lg:flex hidden space-x-6 relative  max-container px-16 lg:py-5">
         <img
-          src="/images/aboutCollage.png"
+          src="/images/aboutcollage.png"
           alt="Background Element"
           className=""
-          loading="lazy"
         />
+   
       </div>
 
       <div className="lg:hidden px-5">
         <img
-          src="/images/aboutCollageMobile.png"
+          src="/images/aboutcollageMobile.png"
           alt="Background Element"
           className=""
-          loading="lazy"
         />
       </div>
     </div>
